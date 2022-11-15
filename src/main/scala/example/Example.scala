@@ -45,12 +45,12 @@ object Example {
     case None => throw new RuntimeException("Cannot obtain a reference to the config data.")
   }
   */
-  val logger = CreateLogger(classOf[Example.type ])
-  val utilizationModel: UtilizationModelDynamic = new UtilizationModelDynamic(3) // initial utilization percentage
+  private val logger = CreateLogger(classOf[Example.type ])
+  private val utilizationModel: UtilizationModelDynamic = new UtilizationModelDynamic(3) // initial utilization percentage
 
-  @main def Start() =
-    val cloudsim = new CloudSim();
-    val datacenter0 = createDataCenter(cloudsim);
+  def Start(): Unit =
+    val cloudsim = new CloudSim()
+    val datacenter0 = createDataCenter(cloudsim)
 
     /*
 
@@ -195,7 +195,7 @@ object Example {
   def createPe(count: Long): List[Pe] =
     if(count < 1) return Nil
     val pe = new PeSimple(10) // HOST_MIPS = million instructions per second
-    return pe :: createPe(count - 1)
+    pe :: createPe(count - 1)
 
   def createVms(count: Long): List[Vm] =
     if(count < 1) return Nil
