@@ -32,7 +32,7 @@ object ScalingComponent {
     }
   }
 
-  private def getHorizontalScalingConfig(horizontalScalingTypeConf: String, horizontalScalingComplexity : String) : HorizontalVmScaling = {
+  def getHorizontalScalingConfig(horizontalScalingTypeConf: String, horizontalScalingComplexity : String) : HorizontalVmScaling = {
 
     logger.info(s"Loading")
 
@@ -54,7 +54,7 @@ object ScalingComponent {
 
   }
 
-  private def getVerticalScalingConfig(verticalScalingTypeConf: String, verticalScalingComplexity : String) : VerticalVmScaling = {
+  def getVerticalScalingConfig(verticalScalingTypeConf: String, verticalScalingComplexity : String) : VerticalVmScaling = {
 
     Parameters.checkType(configName, verticalScalingComplexity, verticalScalingTypes)
 

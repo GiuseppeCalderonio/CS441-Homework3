@@ -14,6 +14,7 @@ import org.cloudbus.cloudsim.allocationpolicies.{VmAllocationPolicy, VmAllocatio
 import org.cloudbus.cloudsim.brokers.DatacenterBroker
 import org.cloudbus.cloudsim.core.CloudSim
 import org.cloudbus.cloudsim.datacenters.network.NetworkDatacenter
+import org.cloudbus.cloudsim.hosts.network.NetworkHost
 import org.cloudbus.cloudsim.selectionpolicies.{VmSelectionPolicy, VmSelectionPolicyMinimumMigrationTime, VmSelectionPolicyMinimumUtilization, VmSelectionPolicyRandomSelection}
 
 import scala.jdk.CollectionConverters.*
@@ -48,7 +49,7 @@ object DatacenterComponent {
     val schedulingInterval = config.getDouble(s"$partialPath.schedulingInterval")
     val migrationPolicy = getMigrationPolicy(s"$partialPath")
 
-    val datacenter = new NetworkDatacenter(cloudsim, hostList.asJava, migrationPolicy)
+    val datacenter = new NetworkDatacenter(cloudsim, hostList.asInstanceOf[List[NetworkHost]].asJava, migrationPolicy)
 
     datacenter.setVmAllocationPolicy(allocationPolicy)
     datacenter.setSchedulingInterval(schedulingInterval)

@@ -1,12 +1,15 @@
 package Components
 
 import HelperUtils.{CreateLogger, Parameters}
-import example.Example.createVms
+import Components.ScalingComponent
+import Components.ScalingComponent.{getHorizontalScalingConfig, getVerticalScalingConfig}
 import org.cloudbus.cloudsim.hosts.{Host, HostSimple}
 import org.cloudbus.cloudsim.power.models.PowerModelHostSimple
 import org.cloudbus.cloudsim.resources.{Pe, PeSimple}
 import org.cloudbus.cloudsim.vms.network.NetworkVm
 import org.cloudbus.cloudsim.vms.{Vm, VmSimple}
+
+import scala.util.Random
 
 object VmComponent {
 
@@ -20,7 +23,7 @@ object VmComponent {
   private val vmTypes = Parameters.vmTypes
 
   def getVmConfig(vmType: String): Vm = {
-    
+
     logger.info(s"Creating a new $configName of type $vmType")
 
     Parameters.checkType(configName, vmType, vmTypes)
@@ -35,10 +38,12 @@ object VmComponent {
     val size = config.getLong(s"$partialPath.size")
     val mips = config.getLong(s"$partialPath.mips")
 
-    val vm = new NetworkVm(0, mips, pes)
+    val vm = new VmSimple(mips, pes)
     vm.setRam(ram)
     vm.setBw(bw)
     vm.setSize(size)
+
+    setScaling(vm, partialPath)
 
     logger.info(s"$configName created")
 
@@ -54,6 +59,26 @@ object VmComponent {
           map(_ => getVmConfig(config._2))
       }
     )
+  }
+
+  def setScaling(vm: Vm, partialPath : String) : Unit = {
+
+    val complexity = config.getString(s"$partialPath.scalingComplexity")
+
+    config.getString(s"$partialPath.scalingType") match {
+      case "horizontal" => vm.setHorizontalScaling(getHorizontalScalingConfig("horizontal", complexity))
+      case "vertical" => setVerticalScaling(vm, complexity)
+    }
+
+  }
+
+  def setVerticalScaling(vm: Vm, complexity: String) : Unit = {
+
+    val verticalScaling = getVerticalScalingConfig("vertical", complexity)
+
+    vm.setBwVerticalScaling(verticalScaling)
+    vm.setPeVerticalScaling(verticalScaling)
+    vm.setRamVerticalScaling(verticalScaling)
   }
 
 
