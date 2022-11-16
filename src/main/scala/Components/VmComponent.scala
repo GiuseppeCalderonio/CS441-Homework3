@@ -38,7 +38,7 @@ object VmComponent {
     val size = config.getLong(s"$partialPath.size")
     val mips = config.getLong(s"$partialPath.mips")
 
-    val vm = new VmSimple(mips, pes)
+    val vm = new NetworkVm(mips, pes)
     vm.setRam(ram)
     vm.setBw(bw)
     vm.setSize(size)

@@ -52,7 +52,7 @@ object CloudletComponent {
 
     cloudletListConfig.flatMap(
       config => {
-        (0 to config._1).
+        (0 until config._1).
           toList.
           map(_ => getCloudletConfig(config._2))
       }
