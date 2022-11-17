@@ -27,10 +27,6 @@ object Configuration {
 
   def getConfig(configName : String) : Int = {
 
-    //val parsedConfig = ConfigFactory.parseFile(new File("src/main/resources/application.conf"))
-
-    //val conf = ConfigFactory.load(parsedConfig)
-
     logger.info(s"Starting simulation with config $configName")
 
     val config = rootConfigName.getConfig(configName)
@@ -39,17 +35,16 @@ object Configuration {
 
     val broker = new DatacenterBrokerSimple(cloudsim)
 
-    val vmList = getComponentList[Vm]("vms", getVmList, config)
     val datacenterList = getComponentList[Datacenter]("datacenters", getDatacenterList, config)
-
+    val vmList = getComponentList[Vm]("vms", getVmList, config)
     val cloudletList = getComponentList[Cloudlet]("cloudlets", getCloudletList, config)
 
     broker.submitCloudletList(cloudletList.asJava)
     broker.submitVmList(vmList.asJava)
 
-    configureNetwork(broker, datacenterList, cloudsim, s"src/main/resources/topologies/$configName.brite")
+    val networkTopologyFileName = s"src/main/resources/topologies/$configName.brite"
 
-    //assert(vmList.forall(vm => vm.isInstanceOf[NetworkVm]))
+    //configureNetwork(broker, datacenterList, cloudsim, networkTopologyFileName)
 
     cloudsim.start()
 
