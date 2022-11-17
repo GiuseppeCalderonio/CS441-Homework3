@@ -1,6 +1,5 @@
 package example
 
-import HelperUtils.{CreateLogger, ObtainConfigReference}
 import org.cloudbus.cloudsim.allocationpolicies.migration.VmAllocationPolicyMigrationBestFitStaticThreshold
 import org.cloudbus.cloudsim.brokers.DatacenterBrokerSimple
 import org.cloudbus.cloudsim.cloudlets.{Cloudlet, CloudletSimple}
@@ -22,6 +21,7 @@ import org.cloudsimplus.autoscaling.resources.{ResourceScalingGradual, ResourceS
 import org.cloudsimplus.autoscaling.{HorizontalVmScalingSimple, VerticalVmScalingSimple}
 import org.cloudsimplus.builders.tables.CloudletsTableBuilder
 import org.cloudsimplus.listeners.{DatacenterVmMigrationEventInfo, EventInfo, EventListener}
+import HelperUtils.{CreateLogger, Parameters}
 
 import scala.jdk.CollectionConverters.*
 
@@ -48,7 +48,10 @@ object Example {
   private val logger = CreateLogger(classOf[Example.type ])
   private val utilizationModel: UtilizationModelDynamic = new UtilizationModelDynamic(3) // initial utilization percentage
 
-  def Start(): Unit =
+  @main def Start(): Unit =
+
+    println(s"${Parameters.componentsConfig}\n\n\n\n\n\n\n\n\n\n")
+
     val cloudsim = new CloudSim()
     val datacenter0 = createDataCenter(cloudsim)
 

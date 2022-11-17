@@ -1,6 +1,6 @@
 package Components
 
-import HelperUtils.{CreateLogger, ObtainConfigReference}
+import HelperUtils.CreateLogger
 import org.cloudbus.cloudsim.cloudlets.{Cloudlet, CloudletSimple}
 import com.typesafe.config.Config
 import org.cloudbus.cloudsim.cloudlets.network.{CloudletTask, NetworkCloudlet}
@@ -37,7 +37,7 @@ object CloudletComponent {
     val PEs = config.getInt(s"$partialPath.PEs")
     val sizes = config.getLong(s"$partialPath.sizes")
 
-    val cloudlet = new NetworkCloudlet(length, PEs)
+    val cloudlet = new CloudletSimple(length, PEs)
     cloudlet.setUtilizationModelBw(new UtilizationModelDynamic(initialUtilizationBw))
     cloudlet.setUtilizationModelRam(new UtilizationModelDynamic(initialUtilizationRam))
     cloudlet.setUtilizationModelCpu(new UtilizationModelDynamic(initialUtilizationCpu))

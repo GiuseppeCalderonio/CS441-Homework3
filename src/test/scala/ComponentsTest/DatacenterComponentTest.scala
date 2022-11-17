@@ -1,11 +1,11 @@
-package Components
+package ComponentsTest
 
 import org.scalatest.PrivateMethodTester
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
-import HelperUtils.Parameters
 import Components.*
 import Components.DatacenterComponent.getDatacenterConfig
+import HelperUtils.Parameters
 import org.cloudbus.cloudsim.core.CloudSim
 import org.cloudbus.cloudsim.datacenters.Datacenter
 import org.scalatest.matchers.must.Matchers.mustBe

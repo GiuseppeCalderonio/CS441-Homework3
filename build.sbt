@@ -10,7 +10,6 @@ val typesafeConfigVersion = "1.4.1"
 val apacheCommonIOVersion = "2.11.0"
 val scalacticVersion = "3.2.9"
 val cloudSimPlusVersion = "7.3.0"
-val pureconfigVersion = "0.16.0"
 
 resolvers += Resolver.jcenterRepo
 
@@ -23,5 +22,11 @@ libraryDependencies ++= Seq(
   "org.scalactic" %% "scalactic" % scalacticVersion,
   "org.scalatest" %% "scalatest" % scalacticVersion % Test,
   "org.scalatest" %% "scalatest-featurespec" % scalacticVersion % Test,
-  "org.cloudsimplus" % "cloudsim-plus" % cloudSimPlusVersion
+  "org.cloudsimplus" % "cloudsim-plus" % cloudSimPlusVersion,
+
 )
+
+assembly / assemblyMergeStrategy := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}

@@ -1,10 +1,10 @@
-package Components
+package ComponentsTest
 
 import Components.VmComponent.getVmConfig
+import HelperUtils.Parameters
 import org.scalatest.PrivateMethodTester
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
-import HelperUtils.Parameters
 import org.cloudbus.cloudsim.vms.Vm
 import org.scalatest.matchers.must.Matchers.mustBe
 

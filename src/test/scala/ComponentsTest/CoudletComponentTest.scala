@@ -1,10 +1,10 @@
-package Components
+package ComponentsTest
 
 import org.scalatest.PrivateMethodTester
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 import org.cloudbus.cloudsim.cloudlets.{Cloudlet, CloudletSimple}
-import CloudletComponent.*
+import Components.CloudletComponent.*
 import HelperUtils.Parameters
 import org.scalatest.matchers.must.Matchers.mustBe
 

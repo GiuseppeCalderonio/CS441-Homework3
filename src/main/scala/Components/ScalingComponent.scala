@@ -1,13 +1,13 @@
 package Components
 
-import HelperUtils.{CreateLogger, Parameters}
-import Components.VmComponent.*
-import HelperUtils.Parameters.throwError
 import org.cloudbus.cloudsim.hosts.{Host, HostSimple}
+import HelperUtils.CreateLogger
 import org.cloudbus.cloudsim.power.models.PowerModelHostSimple
 import org.cloudbus.cloudsim.resources.Processor
 import org.cloudsimplus.autoscaling.resources.{ResourceScaling, ResourceScalingGradual, ResourceScalingInstantaneous}
 import org.cloudsimplus.autoscaling.{HorizontalVmScaling, HorizontalVmScalingSimple, VerticalVmScaling, VerticalVmScalingSimple, VmScaling}
+import HelperUtils.Parameters
+import HelperUtils.Parameters.throwError
 
 object ScalingComponent {
 

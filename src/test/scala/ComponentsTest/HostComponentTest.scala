@@ -1,10 +1,10 @@
-package Components
+package ComponentsTest
 
 import org.scalatest.PrivateMethodTester
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
+import Components.HostComponent.*
 import HelperUtils.Parameters
-import HostComponent.*
 import org.cloudbus.cloudsim.hosts.Host
 import org.scalatest.matchers.must.Matchers.mustBe
 

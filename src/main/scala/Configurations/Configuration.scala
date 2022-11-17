@@ -1,10 +1,10 @@
 package Configurations
 
-import Components.CloudletComponent.*
-import Components.DatacenterComponent.*
+import Components.CloudletComponent.getCloudletList
+import HelperUtils.CreateLogger
+import Components.DatacenterComponent.getDatacenterList
 import Components.VmComponent.getVmList
-import HelperUtils.{CreateLogger, Parameters}
-import com.typesafe.config.Config
+import com.typesafe.config.{Config, ConfigFactory}
 import org.cloudbus.cloudsim.brokers.{DatacenterBroker, DatacenterBrokerSimple}
 import org.cloudbus.cloudsim.cloudlets.Cloudlet
 import org.cloudbus.cloudsim.core.CloudSim
@@ -13,7 +13,9 @@ import org.cloudbus.cloudsim.network.topologies.BriteNetworkTopology
 import org.cloudbus.cloudsim.vms.network.NetworkVm
 import org.cloudbus.cloudsim.vms.{Vm, VmCost}
 import org.cloudsimplus.builders.tables.CloudletsTableBuilder
+import HelperUtils.Parameters
 
+import java.io.File
 import scala.jdk.CollectionConverters.*
 
 object Configuration {
@@ -25,6 +27,10 @@ object Configuration {
 
   def getConfig(configName : String) : Unit = {
 
+    //val parsedConfig = ConfigFactory.parseFile(new File("src/main/resources/application.conf"))
+
+    //val conf = ConfigFactory.load(parsedConfig)
+
     logger.info(s"Starting simulation with config $configName")
 
     val config = rootConfigName.getConfig(configName)
@@ -33,8 +39,9 @@ object Configuration {
 
     val broker = new DatacenterBrokerSimple(cloudsim)
 
-    val datacenterList = getComponentList[Datacenter]("datacenters", getDatacenterList, config)
     val vmList = getComponentList[Vm]("vms", getVmList, config)
+    val datacenterList = getComponentList[Datacenter]("datacenters", getDatacenterList, config)
+
     val cloudletList = getComponentList[Cloudlet]("cloudlets", getCloudletList, config)
 
     broker.submitCloudletList(cloudletList.asJava)

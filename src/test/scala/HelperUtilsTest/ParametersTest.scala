@@ -1,9 +1,9 @@
-package HelperUtils
+package HelperUtilsTest
 
 import org.scalatest.PrivateMethodTester
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
-import Parameters._
+import HelperUtils.Parameters.*
 
 class ParametersTest extends AnyFlatSpec with Matchers with PrivateMethodTester{
 

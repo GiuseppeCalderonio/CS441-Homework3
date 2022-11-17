@@ -1,14 +1,13 @@
 package Components
 
-import HelperUtils.{CreateLogger, Parameters}
+import HostComponent.*
+import HelperUtils.CreateLogger
 import org.cloudbus.cloudsim.cloudlets.{Cloudlet, CloudletSimple}
 import org.cloudbus.cloudsim.datacenters.{Datacenter, DatacenterSimple}
 import org.cloudbus.cloudsim.utilizationmodels.UtilizationModelDynamic
-import Components.HostComponent.{configureHostsNetwork, getHostList}
 import com.typesafe.config.Config
 import org.cloudbus.cloudsim.hosts.Host
 import org.cloudbus.cloudsim.schedulers.vm.{VmScheduler, VmSchedulerSpaceShared, VmSchedulerTimeShared}
-import HelperUtils.Parameters.throwError
 import org.cloudbus.cloudsim.allocationpolicies.migration.{VmAllocationPolicyMigration, VmAllocationPolicyMigrationBestFitStaticThreshold}
 import org.cloudbus.cloudsim.allocationpolicies.{VmAllocationPolicy, VmAllocationPolicyBestFit, VmAllocationPolicyFirstFit, VmAllocationPolicyRandom, VmAllocationPolicyRoundRobin, VmAllocationPolicySimple}
 import org.cloudbus.cloudsim.brokers.DatacenterBroker
@@ -16,6 +15,8 @@ import org.cloudbus.cloudsim.core.CloudSim
 import org.cloudbus.cloudsim.datacenters.network.NetworkDatacenter
 import org.cloudbus.cloudsim.hosts.network.NetworkHost
 import org.cloudbus.cloudsim.selectionpolicies.{VmSelectionPolicy, VmSelectionPolicyMinimumMigrationTime, VmSelectionPolicyMinimumUtilization, VmSelectionPolicyRandomSelection}
+import HelperUtils.Parameters
+import HelperUtils.Parameters.throwError
 
 import scala.jdk.CollectionConverters.*
 
