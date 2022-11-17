@@ -8,7 +8,7 @@ object Large {
 
   @main def runConfLarge(): Unit = {
 
-    Configuration.getConfig(configName)
+    Configuration.getConfig(configName, false)
 
   }
 

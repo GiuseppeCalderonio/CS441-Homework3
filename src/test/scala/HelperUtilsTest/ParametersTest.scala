@@ -5,6 +5,9 @@ import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 import HelperUtils.Parameters.*
 
+/**
+ * this test class is used to test the parameter coherency in the configuration file
+ */
 class ParametersTest extends AnyFlatSpec with Matchers with PrivateMethodTester{
 
   behavior of "Parameters Test"

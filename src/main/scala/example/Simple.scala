@@ -8,7 +8,7 @@ object Simple {
 
   @main def runConfSimple(): Unit = {
 
-    Configuration.getConfig(configName)
+    Configuration.getConfig(configName, false)
 
   }
 

@@ -8,18 +8,47 @@ import org.cloudbus.cloudsim.utilizationmodels.UtilizationModelDynamic
 
 import scala.util.{Failure, Success, Try}
 
+/**
+ * This object contains all the necessary functions to load at runtime
+ * the Cloudlet component from the configuration file
+ */
 object CloudletComponent {
 
 
+  /**
+   * this attribute represents the logger for this object
+   */
   private val logger = CreateLogger(classOf[CloudletComponent.type])
 
+  /**
+   * this attribute represents the name of the component on the configuration file
+   */
   private val configName = "cloudlet"
+
+  /**
+   * this attribute represents the root configuration name of the configuration file
+   */
   private val rootConfigName = Parameters.componentsConfig
 
+  /**
+   * this attribute represents the configuration object for this component
+   */
   private val config = rootConfigName.getConfig(configName)
 
+  /**
+   * this attribute represents a list of all the possible value names that this component can
+   * have in the configuration file
+   */
   private val cloudletTypes = Parameters.cloudletTypes
 
+  /**
+   * this method is used to load an Cloudlet component given its type name
+   * in order to have a better understanding, see src/main/resources/components/cloudlet.conf
+   *
+   * @param cloudletType this parameter represents the type of the Cloudlet to create
+   * @return the cloudlet of the specific type "cloudletType" if it exists, throws an exception
+   *         if the type specified cloudlet does not exist
+   */
   def getCloudletConfig(cloudletType: String): Cloudlet = {
 
     Parameters.checkType(configName, cloudletType, cloudletTypes)
@@ -46,6 +75,15 @@ object CloudletComponent {
     cloudlet
   }
 
+  /**
+   * this method is used to load a list of Cloudlets given a list of pairs, where the
+   * second element represents the type of the host to create, while the first element
+   * represents how many cloudlets of that type to create
+   *
+   * @param cloudletListConfig this parameter represents a list containing all the necessary
+   *                       info about cloudlets to create
+   * @return a list of Cloudlets
+   */
   def getCloudletList(cloudletListConfig : List[(Int, String)]) : List[Cloudlet] = {
 
     cloudletListConfig.flatMap(

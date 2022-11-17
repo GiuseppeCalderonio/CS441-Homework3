@@ -9,6 +9,9 @@ import org.cloudbus.cloudsim.vms.Vm
 import org.scalatest.matchers.must.Matchers.mustBe
 
 
+/**
+ * this test class is used to test the vms
+ */
 class VmComponentTest extends AnyFlatSpec with Matchers with PrivateMethodTester{
 
   behavior of "Vm Component Test"

@@ -8,7 +8,7 @@ object Medium {
 
   @main def runConfMedium(): Unit = {
 
-    Configuration.getConfig(configName)
+    Configuration.getConfig(configName, false)
 
   }
 

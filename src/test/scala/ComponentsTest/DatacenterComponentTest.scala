@@ -9,6 +9,9 @@ import org.cloudbus.cloudsim.core.CloudSim
 import org.cloudbus.cloudsim.datacenters.Datacenter
 import org.scalatest.matchers.must.Matchers.mustBe
 
+/**
+ * this test class is used to test the datacenter
+ */
 class DatacenterComponentTest extends AnyFlatSpec with Matchers with PrivateMethodTester{
 
   behavior of "Datacenter Component Test"

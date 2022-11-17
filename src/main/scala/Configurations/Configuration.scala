@@ -18,38 +18,66 @@ import HelperUtils.Parameters
 import java.io.File
 import scala.jdk.CollectionConverters.*
 
+/**
+ * this object represents the core of the simulation, where all the pieces are
+ * loaded at runtime using some helper methods, starts the simulation,
+ * and returns a detailed description of the results obtained
+ */
 object Configuration {
 
+  /**
+   * this attribute represents the logger for this object
+   */
   private val logger = CreateLogger(classOf[Configuration.type])
 
+  /**
+   * this attribute represents the root configuration name of the configuration file
+   */
   private val rootConfigName = Parameters.configsConfig
 
-
-  def getConfig(configName : String) : Int = {
+  /**
+   * this method represents the core of the simulation, where all the pieces are
+   * loaded at runtime using some helper methods, starts the simulation,
+   * and returns a detailed description of the results obtained
+   * @param configName this parameter represents the name in the
+   *                   configuration file of the simulation to simulate
+   * @param isNetworkConfigured this parameter is used to decide whether the network
+   *                            has to be configured or not
+   * @return always zero by default
+   */
+  def getConfig(configName : String, isNetworkConfigured : Boolean = true) : Int = {
 
     logger.info(s"Starting simulation with config $configName")
 
+    // loads config
     val config = rootConfigName.getConfig(configName)
 
+    // creates simulation
     implicit val cloudsim: CloudSim = new CloudSim()
 
+    // creates broker
     val broker = new DatacenterBrokerSimple(cloudsim)
 
+    // loads compnents
     val datacenterList = getComponentList[Datacenter]("datacenters", getDatacenterList, config)
     val vmList = getComponentList[Vm]("vms", getVmList, config)
     val cloudletList = getComponentList[Cloudlet]("cloudlets", getCloudletList, config)
 
+    // submit compnents
     broker.submitCloudletList(cloudletList.asJava)
     broker.submitVmList(vmList.asJava)
 
-    val networkTopologyFileName = s"src/main/resources/topologies/$configName.brite"
+    if(isNetworkConfigured){
+      // configure network
+      val networkTopologyFileName = s"src/main/resources/topologies/$configName.brite"
+      configureNetwork(broker, datacenterList, cloudsim, networkTopologyFileName)
+    }
 
-    //configureNetwork(broker, datacenterList, cloudsim, networkTopologyFileName)
-
+    // start simulation
     cloudsim.start()
 
+    // show results
     new CloudletsTableBuilder(broker.getCloudletFinishedList).build()
-
     computeCost(broker)
 
     logger.info(s"Simulation terminated")
@@ -58,6 +86,18 @@ object Configuration {
 
   }
 
+  /**
+   * this method is used to load at runtime a list of components given its type, its function
+   * used to be created, and its name in the configuration file
+   * @param componentNameConfig this parameter represents the name of the component
+   *                            in the configuration file
+   * @param getComponentFunction this parameter represents the function to use to load at
+   *                             runtime the component
+   * @param config this parameter represents the configuration object used to load the component
+   * @param cloudsim this parameter is used to create the datacenter in case of the type being a datacenter
+   * @tparam T this parameter represents the scala type of the component to create
+   * @return a list of the components created of type T
+   */
   def getComponentList[T](componentNameConfig : String, getComponentFunction : List[(Int, String)] => List[T], config : Config)(implicit cloudsim: CloudSim): List[T] = {
 
     val componentsConfig = config.getConfigList(componentNameConfig).asScala.toList
@@ -73,7 +113,14 @@ object Configuration {
     getComponentFunction(list_Count_Component)
   }
 
-
+  /**
+   * this method is used to configure the simulation network that connects multiple datacenters
+   * @param broker this parameter represents the broker of the network
+   * @param datacenters this parameter represents the list of datacenters in the network
+   * @param simulation this parameter represents the simulation object of the simulation
+   * @param networkTopologyFileName this parameter represents the .brite name of the file where
+   *                                the network is configured
+   */
   def configureNetwork(broker : DatacenterBroker, datacenters : List[Datacenter], simulation : CloudSim, networkTopologyFileName : String): Unit = {
 
     val networkTopology = BriteNetworkTopology.getInstance(networkTopologyFileName)
@@ -86,7 +133,11 @@ object Configuration {
 
   }
 
-
+  /**
+   * this method is used to compute the cost of the simulation
+   * @param broker this parameter represents the broker of the simulation, that
+   *               contains all the cost information
+   */
   def computeCost(broker : DatacenterBroker): Unit = {
 
     val vms = broker.getVmCreatedList[Vm].asScala
@@ -102,11 +153,11 @@ object Configuration {
     val totalNonIdleVms = vms.map( vm => if(vm.getTotalExecutionTime > 0) 1 else 0).sum
 
     logger.info(f"Total cost ($$) for $totalNonIdleVms%3d active VMs from ${broker.getVmsNumber}%3d total Vms created : " )
-    logger.info(f"Procssing cost:   " + f"$processingCost%8.2f $$")
-    logger.info(f"Memory cost   " + f" $memoryCost%13.2f $$ ")
-    logger.info(f"Storage cost:   " + f"$storageCost%11.2f $$" )
-    logger.info(f"Bandwidth cost:   " + f" $bandwidthTotalCost%8.2f $$" )
-    logger.info(f"Total cost:   " + f" $totalCost%13.2f $$ ")
+    logger.info(f"Processing cost: " + f"$processingCost%15.2f $$")
+    logger.info(f"Memory cost:     " + f" $memoryCost%15.2f $$ ")
+    logger.info(f"Storage cost:    " + f"$storageCost%15.2f $$" )
+    logger.info(f"Bandwidth cost:  " + f" $bandwidthTotalCost%15.2f $$" )
+    logger.info(f"Total cost:      " + f" $totalCost%15.2f $$ ")
 
 
   }

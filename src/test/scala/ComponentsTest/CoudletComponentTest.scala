@@ -8,6 +8,9 @@ import CloudComponents.CloudletComponent.*
 import HelperUtils.Parameters
 import org.scalatest.matchers.must.Matchers.mustBe
 
+/**
+ * this test class is used to test the cloudlet
+ */
 class CoudletComponentTest extends AnyFlatSpec with Matchers with PrivateMethodTester{
 
   behavior of "Cloudlet Component Test"
