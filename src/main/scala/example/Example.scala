@@ -48,7 +48,7 @@ object Example {
   private val logger = CreateLogger(classOf[Example.type ])
   private val utilizationModel: UtilizationModelDynamic = new UtilizationModelDynamic(3) // initial utilization percentage
 
-  @main def Start(): Unit =
+  def Start(): Unit =
 
     println(s"${Parameters.componentsConfig}\n\n\n\n\n\n\n\n\n\n")
 

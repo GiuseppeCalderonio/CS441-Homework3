@@ -4,7 +4,7 @@ import org.scalatest.PrivateMethodTester
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 import org.cloudbus.cloudsim.cloudlets.{Cloudlet, CloudletSimple}
-import Components.CloudletComponent.*
+import CloudComponents.CloudletComponent.*
 import HelperUtils.Parameters
 import org.scalatest.matchers.must.Matchers.mustBe
 

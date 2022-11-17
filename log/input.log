@@ -1,0 +1,764 @@
+20:08:45.688 [sbt-bg-threads-1] INFO  CloudSim - 
+================== Starting CloudSim Plus 7.3.0 ==================
+
+20:08:45.688 [sbt-bg-threads-1] INFO  Datacenter - 0.00: DatacenterSimple1 is starting...
+20:08:45.697 [sbt-bg-threads-1] INFO  Datacenter - 0.00: DatacenterSimple2 is starting...
+20:08:45.697 [sbt-bg-threads-1] INFO  DatacenterBroker - DatacenterBrokerSimple3 is starting...
+20:08:45.697 [sbt-bg-threads-1] INFO  CloudSim - Entities started.
+20:08:45.697 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple3: List of 2 datacenters(s) received.
+20:08:45.697 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple3: Trying to create Vm 0 in DatacenterSimple1
+20:08:45.697 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple3: Trying to create Vm 1 in DatacenterSimple1
+20:08:45.697 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple3: Trying to create Vm 2 in DatacenterSimple1
+20:08:45.697 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple3: Trying to create Vm 3 in DatacenterSimple1
+20:08:45.697 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple3: Trying to create Vm 4 in DatacenterSimple1
+20:08:45.712 [sbt-bg-threads-1] INFO  VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 0 has been allocated to Host 0/DC 1
+20:08:45.712 [sbt-bg-threads-1] INFO  VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 1 has been allocated to Host 1/DC 1
+20:08:45.712 [sbt-bg-threads-1] INFO  VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 2 has been allocated to Host 2/DC 1
+20:08:45.712 [sbt-bg-threads-1] WARN  VmAllocationPolicy - 0.00: VmAllocationPolicySimple: No suitable host found for Vm 3 in Datacenter 1
+20:08:45.712 [sbt-bg-threads-1] WARN  VmAllocationPolicy - 0.00: VmAllocationPolicySimple: No suitable host found for Vm 4 in Datacenter 1
+20:08:45.724 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple3: Trying to create Vm 3 in DatacenterSimple2
+20:08:45.724 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.10: DatacenterBrokerSimple3: Trying to create Vm 4 in DatacenterSimple2
+20:08:45.724 [sbt-bg-threads-1] INFO  VmAllocationPolicy - 0.10: VmAllocationPolicySimple: Vm 3 has been allocated to Host 0/DC 2
+20:08:45.728 [sbt-bg-threads-1] INFO  VmAllocationPolicy - 0.10: VmAllocationPolicySimple: Vm 4 has been allocated to Host 1/DC 2
+20:08:45.728 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.20: DatacenterBrokerSimple3: Sending Cloudlet 0 to Vm 0 in Host 0/DC 1.
+20:08:45.728 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.20: DatacenterBrokerSimple3: All 1 waiting Cloudlets submitted to some VM.
+20:08:45.744 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.60: DatacenterBrokerSimple3: Cloudlet 0 finished in Vm 0 and returned to broker.
+20:08:45.744 [sbt-bg-threads-1] INFO  CloudSim - 0.71: Processing last events before simulation shutdown.
+20:08:45.744 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.71: DatacenterBrokerSimple3 is shutting down...
+20:08:45.744 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.71: DatacenterBrokerSimple3: Requesting Vm 4 destruction.
+20:08:45.744 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.71: DatacenterBrokerSimple3: Requesting Vm 3 destruction.
+20:08:45.744 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.71: DatacenterBrokerSimple3: Requesting Vm 2 destruction.
+20:08:45.744 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.71: DatacenterBrokerSimple3: Requesting Vm 1 destruction.
+20:08:45.744 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.71: DatacenterBrokerSimple3: Requesting Vm 0 destruction.
+20:08:45.744 [sbt-bg-threads-1] INFO  Datacenter - 0.71: DatacenterSimple: Vm 2 destroyed on Host 2/DC 1. 
+20:08:45.744 [sbt-bg-threads-1] INFO  Datacenter - 0.71: DatacenterSimple: Vm 1 destroyed on Host 1/DC 1. 
+20:08:45.744 [sbt-bg-threads-1] INFO  Datacenter - 0.71: DatacenterSimple: Vm 0 destroyed on Host 0/DC 1. 
+20:08:45.760 [sbt-bg-threads-1] INFO  Datacenter - 0.71: DatacenterSimple: Vm 4 destroyed on Host 1/DC 2. 
+20:08:45.760 [sbt-bg-threads-1] INFO  Datacenter - 0.71: DatacenterSimple: Vm 3 destroyed on Host 0/DC 2. 
+20:08:45.760 [sbt-bg-threads-1] INFO  CloudSim - Simulation: No more future events
+
+20:08:45.760 [sbt-bg-threads-1] INFO  CloudInformationService - CloudInformationService0: Notify all CloudSim Plus entities to shutdown.
+
+20:08:45.760 [sbt-bg-threads-1] INFO  Datacenter - 0.71: DatacenterSimple2 is shutting down...
+20:08:45.760 [sbt-bg-threads-1] INFO  CloudSim - 
+================== Simulation finished at time 0.71 ==================
+
+20:09:02.100 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Starting simulation with config config1
+20:17:37.630 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Starting simulation with config config1
+20:28:31.135 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Starting simulation with config config1
+20:30:23.780 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Starting simulation with config config1
+20:30:23.867 [sbt-bg-threads-1] INFO  a.VmComponent$ - Creating a new vm of type simple
+20:30:23.867 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - vm of type simple selected
+20:30:23.914 [sbt-bg-threads-1] INFO  a.ScalingComponent$ - Loading
+20:30:23.914 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - scaling of type simple selected
+20:30:23.914 [sbt-bg-threads-1] INFO  a.VmComponent$ - vm created
+20:30:23.914 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - datacenter of type simple selected
+20:30:23.914 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - Creating a new datacenter of type simple
+20:30:23.930 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:30:23.930 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:30:23.930 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:30:23.930 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:30:23.930 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:30:23.930 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:30:23.930 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:30:23.930 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type medium
+20:30:23.946 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:30:23.961 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - datacenter created
+20:30:23.961 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - datacenter of type simple selected
+20:30:23.961 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - Creating a new datacenter of type simple
+20:30:23.961 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:30:23.961 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:30:23.977 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:30:23.977 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:30:23.977 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:30:23.977 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:30:23.977 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:30:23.977 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type medium
+20:30:23.981 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:30:23.981 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - datacenter created
+20:30:23.981 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - cloudlet of type light selected
+20:30:23.981 [sbt-bg-threads-1] INFO  a.CloudletComponent$ - Creating a new cloudlet of type light
+20:30:23.993 [sbt-bg-threads-1] INFO  a.CloudletComponent$ - cloudlet created
+20:32:11.351 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Starting simulation with config config1
+20:32:11.382 [sbt-bg-threads-1] INFO  a.VmComponent$ - Creating a new vm of type simple
+20:32:11.398 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - vm of type simple selected
+20:32:11.429 [sbt-bg-threads-1] INFO  a.ScalingComponent$ - Loading
+20:32:11.429 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - scaling of type simple selected
+20:32:11.429 [sbt-bg-threads-1] INFO  a.VmComponent$ - vm created
+20:32:11.445 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - datacenter of type simple selected
+20:32:11.445 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - Creating a new datacenter of type simple
+20:32:11.445 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:32:11.445 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:32:11.461 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:32:11.461 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:32:11.461 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:32:11.461 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:32:11.461 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:32:11.461 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type medium
+20:32:11.461 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:32:11.492 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - datacenter created
+20:32:11.492 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - datacenter of type simple selected
+20:32:11.492 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - Creating a new datacenter of type simple
+20:32:11.492 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:32:11.492 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:32:11.492 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:32:11.492 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:32:11.492 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:32:11.492 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:32:11.492 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:32:11.492 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type medium
+20:32:11.508 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:32:11.508 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - datacenter created
+20:32:11.513 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - cloudlet of type light selected
+20:32:11.513 [sbt-bg-threads-1] INFO  a.CloudletComponent$ - Creating a new cloudlet of type light
+20:32:11.513 [sbt-bg-threads-1] INFO  a.CloudletComponent$ - cloudlet created
+20:33:20.424 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Starting simulation with config config1
+20:33:20.456 [sbt-bg-threads-1] INFO  a.VmComponent$ - Creating a new vm of type simple
+20:33:20.456 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - vm of type simple selected
+20:33:20.495 [sbt-bg-threads-1] INFO  a.ScalingComponent$ - Loading
+20:33:20.503 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - scaling of type simple selected
+20:33:20.503 [sbt-bg-threads-1] INFO  a.VmComponent$ - vm created
+20:33:20.503 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - datacenter of type simple selected
+20:33:20.503 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - Creating a new datacenter of type simple
+20:33:20.519 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:33:20.519 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:33:20.534 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:33:20.534 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:33:20.534 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:33:20.534 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:33:20.534 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:33:20.534 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type medium
+20:33:20.534 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:33:20.566 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - datacenter created
+20:33:20.566 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - datacenter of type simple selected
+20:33:20.566 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - Creating a new datacenter of type simple
+20:33:20.566 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:33:20.566 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:33:20.566 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:33:20.566 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:33:20.566 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:33:20.566 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:33:20.566 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:33:20.566 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type medium
+20:33:20.566 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:33:20.566 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - datacenter created
+20:33:20.581 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - cloudlet of type light selected
+20:33:20.581 [sbt-bg-threads-1] INFO  a.CloudletComponent$ - Creating a new cloudlet of type light
+20:33:20.581 [sbt-bg-threads-1] INFO  a.CloudletComponent$ - cloudlet created
+20:33:47.724 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Starting simulation with config config1
+20:33:47.773 [sbt-bg-threads-1] INFO  a.VmComponent$ - Creating a new vm of type simple
+20:33:47.773 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - vm of type simple selected
+20:33:47.805 [sbt-bg-threads-1] INFO  a.ScalingComponent$ - Loading
+20:33:47.805 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - scaling of type simple selected
+20:33:47.805 [sbt-bg-threads-1] INFO  a.VmComponent$ - vm created
+20:33:47.820 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - datacenter of type simple selected
+20:33:47.820 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - Creating a new datacenter of type simple
+20:33:47.820 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:33:47.820 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:33:47.836 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:33:47.836 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:33:47.836 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:33:47.836 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:33:47.836 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:33:47.836 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type medium
+20:33:47.852 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:33:47.868 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - datacenter created
+20:33:47.868 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - datacenter of type simple selected
+20:33:47.868 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - Creating a new datacenter of type simple
+20:33:47.868 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:33:47.868 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:33:47.868 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:33:47.883 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:33:47.899 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:33:47.899 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:33:47.899 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:33:47.899 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type medium
+20:33:47.899 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:33:47.899 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - datacenter created
+20:33:47.899 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - cloudlet of type light selected
+20:33:47.899 [sbt-bg-threads-1] INFO  a.CloudletComponent$ - Creating a new cloudlet of type light
+20:33:47.915 [sbt-bg-threads-1] INFO  a.CloudletComponent$ - cloudlet created
+20:34:30.528 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Starting simulation with config config1
+20:34:30.576 [sbt-bg-threads-1] INFO  a.VmComponent$ - Creating a new vm of type simple
+20:34:30.576 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - vm of type simple selected
+20:34:30.607 [sbt-bg-threads-1] INFO  a.ScalingComponent$ - Loading
+20:34:30.607 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - scaling of type simple selected
+20:34:30.607 [sbt-bg-threads-1] INFO  a.VmComponent$ - vm created
+20:34:30.623 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - datacenter of type simple selected
+20:34:30.623 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - Creating a new datacenter of type simple
+20:34:30.623 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:34:30.623 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:34:30.638 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:34:30.638 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:34:30.638 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:34:30.638 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:34:30.638 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:34:30.638 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type medium
+20:34:30.638 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:34:30.674 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - datacenter created
+20:34:30.674 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - datacenter of type simple selected
+20:34:30.674 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - Creating a new datacenter of type simple
+20:34:30.674 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:34:30.674 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:34:30.674 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:34:30.674 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:34:30.674 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:34:30.674 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:34:30.674 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:34:30.674 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type medium
+20:34:30.674 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:34:30.674 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - datacenter created
+20:34:30.685 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - cloudlet of type light selected
+20:34:30.685 [sbt-bg-threads-1] INFO  a.CloudletComponent$ - Creating a new cloudlet of type light
+20:34:30.685 [sbt-bg-threads-1] INFO  a.CloudletComponent$ - cloudlet created
+20:35:40.435 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Starting simulation with config config1
+20:35:40.475 [sbt-bg-threads-1] INFO  a.VmComponent$ - Creating a new vm of type simple
+20:35:40.475 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - vm of type simple selected
+20:35:40.522 [sbt-bg-threads-1] INFO  a.ScalingComponent$ - Loading
+20:35:40.522 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - scaling of type simple selected
+20:35:40.522 [sbt-bg-threads-1] INFO  a.VmComponent$ - vm created
+20:35:40.522 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - datacenter of type simple selected
+20:35:40.522 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - Creating a new datacenter of type simple
+20:35:40.538 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:35:40.538 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:35:40.554 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:35:40.554 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:35:40.554 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:35:40.554 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:35:40.554 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:35:40.554 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type medium
+20:35:40.554 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:35:40.600 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - datacenter created
+20:35:40.600 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - datacenter of type simple selected
+20:35:40.600 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - Creating a new datacenter of type simple
+20:35:40.600 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:35:40.600 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:35:40.600 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:35:40.600 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:35:40.600 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:35:40.600 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:35:40.600 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:35:40.600 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type medium
+20:35:40.600 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:35:40.616 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - datacenter created
+20:35:40.616 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - cloudlet of type light selected
+20:35:40.616 [sbt-bg-threads-1] INFO  a.CloudletComponent$ - Creating a new cloudlet of type light
+20:35:40.616 [sbt-bg-threads-1] INFO  a.CloudletComponent$ - cloudlet created
+20:35:40.636 [sbt-bg-threads-1] INFO  CloudSim - 
+================== Starting CloudSim Plus 7.3.0 ==================
+
+20:35:40.648 [sbt-bg-threads-1] INFO  DatacenterBroker - DatacenterBrokerSimple1 is starting...
+20:35:40.648 [sbt-bg-threads-1] INFO  Datacenter - 0.00: NetworkDatacenter2 is starting...
+20:35:40.648 [sbt-bg-threads-1] INFO  Host - 0.00: Host 0/DC 2 is being powered on (expected time: 5.0 seconds).
+20:35:40.648 [sbt-bg-threads-1] INFO  Host - 0.00: Host 1/DC 2 is being powered on (expected time: 5.0 seconds).
+20:35:40.648 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch3 is starting...
+20:35:40.648 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch4 is starting...
+20:35:40.648 [sbt-bg-threads-1] INFO  Datacenter - 0.00: NetworkDatacenter5 is starting...
+20:35:40.663 [sbt-bg-threads-1] INFO  Host - 0.00: Host 0/DC 5 is being powered on (expected time: 5.0 seconds).
+20:35:40.663 [sbt-bg-threads-1] INFO  Host - 0.00: Host 1/DC 5 is being powered on (expected time: 5.0 seconds).
+20:35:40.663 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch6 is starting...
+20:35:40.663 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch7 is starting...
+20:35:40.663 [sbt-bg-threads-1] INFO  CloudSim - Entities started.
+20:35:40.663 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple1: List of 2 datacenters(s) received.
+20:35:40.663 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple1: Trying to create Vm 0 in NetworkDatacenter2
+20:35:40.679 [sbt-bg-threads-1] WARN  VmAllocationPolicy - 3.20: VmAllocationPolicySimple: No suitable host found for Vm 0 in Datacenter 2
+20:35:40.695 [sbt-bg-threads-1] INFO  Host - 5.00: Host 0/DC 2 is powered on.
+20:35:40.695 [sbt-bg-threads-1] INFO  Host - 5.00: Host 1/DC 2 is powered on.
+20:35:40.695 [sbt-bg-threads-1] INFO  Host - 5.00: Host 0/DC 5 is powered on.
+20:35:40.695 [sbt-bg-threads-1] INFO  Host - 5.00: Host 1/DC 5 is powered on.
+20:35:40.695 [sbt-bg-threads-1] INFO  DatacenterBroker - 6.50: DatacenterBrokerSimple1: Trying to create Vm 0 in NetworkDatacenter5
+20:35:40.710 [sbt-bg-threads-1] INFO  VmAllocationPolicy - 7.60: VmAllocationPolicySimple: Vm 0 has been allocated to Host 0/DC 5
+20:35:40.710 [sbt-bg-threads-1] INFO  DatacenterBroker - 8.80: DatacenterBrokerSimple1: Sending Cloudlet 0 to Vm 0 in Host 0/DC 5.
+20:35:40.710 [sbt-bg-threads-1] INFO  DatacenterBroker - 8.80: DatacenterBrokerSimple1: All 1 waiting Cloudlets submitted to some VM.
+20:35:40.726 [sbt-bg-threads-1] INFO  DatacenterBroker - 10.26: DatacenterBrokerSimple1: Cloudlet 0 finished in Vm 0 and returned to broker.
+20:35:40.726 [sbt-bg-threads-1] INFO  CloudSim - 10.37: Processing last events before simulation shutdown.
+20:35:40.726 [sbt-bg-threads-1] INFO  DatacenterBroker - 10.37: DatacenterBrokerSimple1 is shutting down...
+20:35:40.726 [sbt-bg-threads-1] INFO  DatacenterBroker - 10.37: DatacenterBrokerSimple1: Requesting Vm 0 destruction.
+20:35:40.736 [sbt-bg-threads-1] INFO  Datacenter - 11.47: NetworkDatacenter: Vm 0 destroyed on Host 0/DC 5. 
+20:35:40.736 [sbt-bg-threads-1] INFO  CloudSim - Simulation: No more future events
+
+20:35:40.736 [sbt-bg-threads-1] INFO  CloudInformationService - CloudInformationService0: Notify all CloudSim Plus entities to shutdown.
+
+20:35:40.736 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch3 is shutting down...
+20:35:40.736 [sbt-bg-threads-1] INFO  Datacenter - 11.47: NetworkDatacenter5 is shutting down...
+20:35:40.736 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch7 is shutting down...
+20:35:40.736 [sbt-bg-threads-1] INFO  CloudSim - 
+================== Simulation finished at time 11.47 ==================
+
+20:35:40.789 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Total cost ($) for   1 active VMs from   1 total Vms created : 
+20:35:40.789 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Procssing cost:       0.31 $
+20:35:40.789 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Memory cost            10.00 $ 
+20:35:40.789 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Storage cost:          1.00 $
+20:35:40.789 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Bandwidth cost:        5.12 $
+20:35:40.789 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Total cost:            16.43 $ 
+20:35:40.789 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Simulation terminated
+20:36:57.258 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Starting simulation with config config1
+20:36:57.305 [sbt-bg-threads-1] INFO  a.VmComponent$ - Creating a new vm of type simple
+20:36:57.305 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - vm of type simple selected
+20:36:57.337 [sbt-bg-threads-1] INFO  a.ScalingComponent$ - Loading
+20:36:57.337 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - scaling of type simple selected
+20:36:57.337 [sbt-bg-threads-1] INFO  a.VmComponent$ - vm created
+20:36:57.352 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - datacenter of type simple selected
+20:36:57.352 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - Creating a new datacenter of type simple
+20:36:57.352 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:36:57.352 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:36:57.368 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:36:57.368 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:36:57.368 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:36:57.368 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:36:57.368 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:36:57.368 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type medium
+20:36:57.368 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:36:57.399 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - datacenter created
+20:36:57.399 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - datacenter of type simple selected
+20:36:57.399 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - Creating a new datacenter of type simple
+20:36:57.399 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:36:57.399 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:36:57.399 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:36:57.399 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:36:57.399 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type simple
+20:36:57.399 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:36:57.399 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:36:57.399 [sbt-bg-threads-1] INFO  a.HostComponent$ - Creating a new host of type medium
+20:36:57.399 [sbt-bg-threads-1] INFO  a.HostComponent$ - host created
+20:36:57.399 [sbt-bg-threads-1] INFO  a.DatacenterComponent$ - datacenter created
+20:36:57.412 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - cloudlet of type light selected
+20:36:57.412 [sbt-bg-threads-1] INFO  a.CloudletComponent$ - Creating a new cloudlet of type light
+20:36:57.415 [sbt-bg-threads-1] INFO  a.CloudletComponent$ - cloudlet created
+20:36:57.415 [sbt-bg-threads-1] INFO  CloudSim - 
+================== Starting CloudSim Plus 7.3.0 ==================
+
+20:36:57.415 [sbt-bg-threads-1] INFO  DatacenterBroker - DatacenterBrokerSimple1 is starting...
+20:36:57.415 [sbt-bg-threads-1] INFO  Datacenter - 0.00: NetworkDatacenter2 is starting...
+20:36:57.431 [sbt-bg-threads-1] INFO  Host - 0.00: Host 0/DC 2 is being powered on (expected time: 5.0 seconds).
+20:36:57.431 [sbt-bg-threads-1] INFO  Host - 0.00: Host 1/DC 2 is being powered on (expected time: 5.0 seconds).
+20:36:57.431 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch3 is starting...
+20:36:57.431 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch4 is starting...
+20:36:57.431 [sbt-bg-threads-1] INFO  Datacenter - 0.00: NetworkDatacenter5 is starting...
+20:36:57.431 [sbt-bg-threads-1] INFO  Host - 0.00: Host 0/DC 5 is being powered on (expected time: 5.0 seconds).
+20:36:57.431 [sbt-bg-threads-1] INFO  Host - 0.00: Host 1/DC 5 is being powered on (expected time: 5.0 seconds).
+20:36:57.431 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch6 is starting...
+20:36:57.431 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch7 is starting...
+20:36:57.431 [sbt-bg-threads-1] INFO  CloudSim - Entities started.
+20:36:57.431 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple1: List of 2 datacenters(s) received.
+20:36:57.431 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple1: Trying to create Vm 0 in NetworkDatacenter2
+20:36:57.447 [sbt-bg-threads-1] WARN  VmAllocationPolicy - 3.20: VmAllocationPolicySimple: No suitable host found for Vm 0 in Datacenter 2
+20:36:57.447 [sbt-bg-threads-1] INFO  Host - 5.00: Host 0/DC 2 is powered on.
+20:36:57.447 [sbt-bg-threads-1] INFO  Host - 5.00: Host 1/DC 2 is powered on.
+20:36:57.447 [sbt-bg-threads-1] INFO  Host - 5.00: Host 0/DC 5 is powered on.
+20:36:57.447 [sbt-bg-threads-1] INFO  Host - 5.00: Host 1/DC 5 is powered on.
+20:36:57.447 [sbt-bg-threads-1] INFO  DatacenterBroker - 6.50: DatacenterBrokerSimple1: Trying to create Vm 0 in NetworkDatacenter5
+20:36:57.462 [sbt-bg-threads-1] INFO  VmAllocationPolicy - 7.60: VmAllocationPolicySimple: Vm 0 has been allocated to Host 0/DC 5
+20:36:57.462 [sbt-bg-threads-1] INFO  DatacenterBroker - 8.80: DatacenterBrokerSimple1: Sending Cloudlet 0 to Vm 0 in Host 0/DC 5.
+20:36:57.462 [sbt-bg-threads-1] INFO  DatacenterBroker - 8.80: DatacenterBrokerSimple1: All 1 waiting Cloudlets submitted to some VM.
+20:36:57.462 [sbt-bg-threads-1] INFO  DatacenterBroker - 10.26: DatacenterBrokerSimple1: Cloudlet 0 finished in Vm 0 and returned to broker.
+20:36:57.462 [sbt-bg-threads-1] INFO  CloudSim - 10.37: Processing last events before simulation shutdown.
+20:36:57.462 [sbt-bg-threads-1] INFO  DatacenterBroker - 10.37: DatacenterBrokerSimple1 is shutting down...
+20:36:57.462 [sbt-bg-threads-1] INFO  DatacenterBroker - 10.37: DatacenterBrokerSimple1: Requesting Vm 0 destruction.
+20:36:57.478 [sbt-bg-threads-1] INFO  Datacenter - 11.47: NetworkDatacenter: Vm 0 destroyed on Host 0/DC 5. 
+20:36:57.478 [sbt-bg-threads-1] INFO  CloudSim - Simulation: No more future events
+
+20:36:57.478 [sbt-bg-threads-1] INFO  CloudInformationService - CloudInformationService0: Notify all CloudSim Plus entities to shutdown.
+
+20:36:57.478 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch3 is shutting down...
+20:36:57.478 [sbt-bg-threads-1] INFO  Datacenter - 11.47: NetworkDatacenter5 is shutting down...
+20:36:57.478 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch7 is shutting down...
+20:36:57.478 [sbt-bg-threads-1] INFO  CloudSim - 
+================== Simulation finished at time 11.47 ==================
+
+20:36:57.525 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Total cost ($) for   1 active VMs from   1 total Vms created : 
+20:36:57.525 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Procssing cost:       0.31 $
+20:36:57.525 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Memory cost            10.00 $ 
+20:36:57.525 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Storage cost:          1.00 $
+20:36:57.525 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Bandwidth cost:        5.12 $
+20:36:57.525 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Total cost:            16.43 $ 
+20:36:57.525 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Simulation terminated
+20:38:19.265 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Starting simulation with config config1
+20:38:19.312 [sbt-bg-threads-1] INFO  CloudComponents.VmComponent$ - Creating a new vm of type simple
+20:38:19.312 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - vm of type simple selected
+20:38:19.344 [sbt-bg-threads-1] INFO  CloudComponents.ScalingComponent$ - Loading
+20:38:19.344 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - scaling of type simple selected
+20:38:19.344 [sbt-bg-threads-1] INFO  CloudComponents.VmComponent$ - vm created
+20:38:19.344 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - datacenter of type simple selected
+20:38:19.344 [sbt-bg-threads-1] INFO  C.DatacenterComponent$ - Creating a new datacenter of type simple
+20:38:19.359 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:38:19.359 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - Creating a new host of type simple
+20:38:19.375 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - host created
+20:38:19.375 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:38:19.375 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - Creating a new host of type simple
+20:38:19.375 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - host created
+20:38:19.375 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:38:19.375 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - Creating a new host of type medium
+20:38:19.375 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - host created
+20:38:19.407 [sbt-bg-threads-1] INFO  C.DatacenterComponent$ - datacenter created
+20:38:19.407 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - datacenter of type simple selected
+20:38:19.407 [sbt-bg-threads-1] INFO  C.DatacenterComponent$ - Creating a new datacenter of type simple
+20:38:19.407 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:38:19.407 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - Creating a new host of type simple
+20:38:19.407 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - host created
+20:38:19.407 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:38:19.407 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - Creating a new host of type simple
+20:38:19.407 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - host created
+20:38:19.407 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:38:19.407 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - Creating a new host of type medium
+20:38:19.407 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - host created
+20:38:19.407 [sbt-bg-threads-1] INFO  C.DatacenterComponent$ - datacenter created
+20:38:19.422 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - cloudlet of type light selected
+20:38:19.422 [sbt-bg-threads-1] INFO  CloudComponents.CloudletComponent$ - Creating a new cloudlet of type light
+20:38:19.422 [sbt-bg-threads-1] INFO  CloudComponents.CloudletComponent$ - cloudlet created
+20:38:19.438 [sbt-bg-threads-1] INFO  CloudSim - 
+================== Starting CloudSim Plus 7.3.0 ==================
+
+20:38:19.438 [sbt-bg-threads-1] INFO  DatacenterBroker - DatacenterBrokerSimple1 is starting...
+20:38:19.438 [sbt-bg-threads-1] INFO  Datacenter - 0.00: NetworkDatacenter2 is starting...
+20:38:19.438 [sbt-bg-threads-1] INFO  Host - 0.00: Host 0/DC 2 is being powered on (expected time: 5.0 seconds).
+20:38:19.438 [sbt-bg-threads-1] INFO  Host - 0.00: Host 1/DC 2 is being powered on (expected time: 5.0 seconds).
+20:38:19.438 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch3 is starting...
+20:38:19.438 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch4 is starting...
+20:38:19.438 [sbt-bg-threads-1] INFO  Datacenter - 0.00: NetworkDatacenter5 is starting...
+20:38:19.438 [sbt-bg-threads-1] INFO  Host - 0.00: Host 0/DC 5 is being powered on (expected time: 5.0 seconds).
+20:38:19.438 [sbt-bg-threads-1] INFO  Host - 0.00: Host 1/DC 5 is being powered on (expected time: 5.0 seconds).
+20:38:19.438 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch6 is starting...
+20:38:19.438 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch7 is starting...
+20:38:19.438 [sbt-bg-threads-1] INFO  CloudSim - Entities started.
+20:38:19.454 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple1: List of 2 datacenters(s) received.
+20:38:19.454 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple1: Trying to create Vm 0 in NetworkDatacenter2
+20:38:19.454 [sbt-bg-threads-1] WARN  VmAllocationPolicy - 3.20: VmAllocationPolicySimple: No suitable host found for Vm 0 in Datacenter 2
+20:38:19.454 [sbt-bg-threads-1] INFO  Host - 5.00: Host 0/DC 2 is powered on.
+20:38:19.454 [sbt-bg-threads-1] INFO  Host - 5.00: Host 1/DC 2 is powered on.
+20:38:19.454 [sbt-bg-threads-1] INFO  Host - 5.00: Host 0/DC 5 is powered on.
+20:38:19.454 [sbt-bg-threads-1] INFO  Host - 5.00: Host 1/DC 5 is powered on.
+20:38:19.454 [sbt-bg-threads-1] INFO  DatacenterBroker - 6.50: DatacenterBrokerSimple1: Trying to create Vm 0 in NetworkDatacenter5
+20:38:19.469 [sbt-bg-threads-1] INFO  VmAllocationPolicy - 7.60: VmAllocationPolicySimple: Vm 0 has been allocated to Host 0/DC 5
+20:38:19.469 [sbt-bg-threads-1] INFO  DatacenterBroker - 8.80: DatacenterBrokerSimple1: Sending Cloudlet 0 to Vm 0 in Host 0/DC 5.
+20:38:19.469 [sbt-bg-threads-1] INFO  DatacenterBroker - 8.80: DatacenterBrokerSimple1: All 1 waiting Cloudlets submitted to some VM.
+20:38:19.485 [sbt-bg-threads-1] INFO  DatacenterBroker - 10.26: DatacenterBrokerSimple1: Cloudlet 0 finished in Vm 0 and returned to broker.
+20:38:19.485 [sbt-bg-threads-1] INFO  CloudSim - 10.37: Processing last events before simulation shutdown.
+20:38:19.485 [sbt-bg-threads-1] INFO  DatacenterBroker - 10.37: DatacenterBrokerSimple1 is shutting down...
+20:38:19.485 [sbt-bg-threads-1] INFO  DatacenterBroker - 10.37: DatacenterBrokerSimple1: Requesting Vm 0 destruction.
+20:38:19.485 [sbt-bg-threads-1] INFO  Datacenter - 11.47: NetworkDatacenter: Vm 0 destroyed on Host 0/DC 5. 
+20:38:19.485 [sbt-bg-threads-1] INFO  CloudSim - Simulation: No more future events
+
+20:38:19.485 [sbt-bg-threads-1] INFO  CloudInformationService - CloudInformationService0: Notify all CloudSim Plus entities to shutdown.
+
+20:38:19.485 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch3 is shutting down...
+20:38:19.485 [sbt-bg-threads-1] INFO  Datacenter - 11.47: NetworkDatacenter5 is shutting down...
+20:38:19.485 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch7 is shutting down...
+20:38:19.485 [sbt-bg-threads-1] INFO  CloudSim - 
+================== Simulation finished at time 11.47 ==================
+
+20:38:19.548 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Total cost ($) for   1 active VMs from   1 total Vms created : 
+20:38:19.548 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Procssing cost:       0.31 $
+20:38:19.548 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Memory cost            10.00 $ 
+20:38:19.548 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Storage cost:          1.00 $
+20:38:19.548 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Bandwidth cost:        5.12 $
+20:38:19.548 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Total cost:            16.43 $ 
+20:38:19.548 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Simulation terminated
+20:39:36.520 [pool-7-thread-2-ScalaTest-running-VmComponentTest] INFO  CloudComponents.VmComponent$ - Creating a new vm of type simple
+20:39:36.517 [pool-7-thread-4-ScalaTest-running-ParametersTest] INFO  HelperUtils.Parameters$ - cloudlet of type light selected
+20:39:36.518 [pool-7-thread-7-ScalaTest-running-CoudletComponentTest] INFO  HelperUtils.Parameters$ - cloudlet of type light selected
+20:39:36.519 [pool-7-thread-10-ScalaTest-running-ScalingComponentTest] INFO  CloudComponents.ScalingComponent$ - Loading
+20:39:36.521 [pool-7-thread-8-ScalaTest-running-HostComponentTest] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:39:36.522 [pool-7-thread-2-ScalaTest-running-VmComponentTest] INFO  HelperUtils.Parameters$ - vm of type simple selected
+20:39:36.523 [pool-7-thread-7-ScalaTest-running-CoudletComponentTest] INFO  CloudComponents.CloudletComponent$ - Creating a new cloudlet of type light
+20:39:36.525 [pool-7-thread-10-ScalaTest-running-ScalingComponentTest] INFO  HelperUtils.Parameters$ - scaling of type simple selected
+20:39:36.526 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - datacenter of type simple selected
+20:39:36.526 [pool-7-thread-8-ScalaTest-running-HostComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type simple
+20:39:36.530 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  C.DatacenterComponent$ - Creating a new datacenter of type simple
+20:39:36.574 [pool-7-thread-4-ScalaTest-running-ParametersTest] INFO  HelperUtils.Parameters$ - cloudlet of type simple selected
+20:39:36.576 [pool-7-thread-4-ScalaTest-running-ParametersTest] INFO  HelperUtils.Parameters$ - cloudlet of type medium selected
+20:39:36.578 [pool-7-thread-4-ScalaTest-running-ParametersTest] INFO  HelperUtils.Parameters$ - cloudlet of type large selected
+20:39:36.585 [pool-7-thread-10-ScalaTest-running-ScalingComponentTest] INFO  CloudComponents.ScalingComponent$ - Loading
+20:39:36.586 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:39:36.586 [pool-7-thread-10-ScalaTest-running-ScalingComponentTest] INFO  HelperUtils.Parameters$ - scaling of type medium selected
+20:39:36.587 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type simple
+20:39:36.588 [pool-7-thread-10-ScalaTest-running-ScalingComponentTest] INFO  CloudComponents.ScalingComponent$ - Loading
+20:39:36.589 [pool-7-thread-10-ScalaTest-running-ScalingComponentTest] INFO  HelperUtils.Parameters$ - scaling of type large selected
+20:39:36.619 [pool-7-thread-7-ScalaTest-running-CoudletComponentTest] INFO  CloudComponents.CloudletComponent$ - cloudlet created
+20:39:36.619 [pool-7-thread-10-ScalaTest-running-ScalingComponentTest] INFO  HelperUtils.Parameters$ - scaling of type simple selected
+20:39:36.620 [pool-7-thread-7-ScalaTest-running-CoudletComponentTest] INFO  HelperUtils.Parameters$ - cloudlet of type simple selected
+20:39:36.622 [pool-7-thread-7-ScalaTest-running-CoudletComponentTest] INFO  CloudComponents.CloudletComponent$ - Creating a new cloudlet of type simple
+20:39:36.623 [pool-7-thread-7-ScalaTest-running-CoudletComponentTest] INFO  CloudComponents.CloudletComponent$ - cloudlet created
+20:39:36.624 [pool-7-thread-7-ScalaTest-running-CoudletComponentTest] INFO  HelperUtils.Parameters$ - cloudlet of type medium selected
+20:39:36.625 [pool-7-thread-7-ScalaTest-running-CoudletComponentTest] INFO  CloudComponents.CloudletComponent$ - Creating a new cloudlet of type medium
+20:39:36.626 [pool-7-thread-7-ScalaTest-running-CoudletComponentTest] INFO  CloudComponents.CloudletComponent$ - cloudlet created
+20:39:36.627 [pool-7-thread-7-ScalaTest-running-CoudletComponentTest] INFO  HelperUtils.Parameters$ - cloudlet of type large selected
+20:39:36.628 [pool-7-thread-7-ScalaTest-running-CoudletComponentTest] INFO  CloudComponents.CloudletComponent$ - Creating a new cloudlet of type large
+20:39:36.629 [pool-7-thread-4-ScalaTest-running-ParametersTest] ERROR HelperUtils.Parameters$ - Config wrong value not found
+20:39:36.630 [pool-7-thread-7-ScalaTest-running-CoudletComponentTest] INFO  CloudComponents.CloudletComponent$ - cloudlet created
+20:39:36.638 [pool-7-thread-4-ScalaTest-running-ParametersTest] INFO  HelperUtils.Parameters$ - datacenter of type simple selected
+20:39:36.639 [pool-7-thread-4-ScalaTest-running-ParametersTest] INFO  HelperUtils.Parameters$ - datacenter of type medium selected
+20:39:36.640 [pool-7-thread-4-ScalaTest-running-ParametersTest] INFO  HelperUtils.Parameters$ - datacenter of type large selected
+20:39:36.644 [pool-7-thread-4-ScalaTest-running-ParametersTest] ERROR HelperUtils.Parameters$ - Config wrong value not found
+20:39:36.648 [pool-7-thread-4-ScalaTest-running-ParametersTest] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:39:36.649 [pool-7-thread-10-ScalaTest-running-ScalingComponentTest] INFO  HelperUtils.Parameters$ - scaling of type medium selected
+20:39:36.649 [pool-7-thread-4-ScalaTest-running-ParametersTest] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:39:36.651 [pool-7-thread-10-ScalaTest-running-ScalingComponentTest] INFO  HelperUtils.Parameters$ - scaling of type large selected
+20:39:36.653 [pool-7-thread-4-ScalaTest-running-ParametersTest] INFO  HelperUtils.Parameters$ - host of type large selected
+20:39:36.657 [pool-7-thread-4-ScalaTest-running-ParametersTest] ERROR HelperUtils.Parameters$ - Config wrong value not found
+20:39:36.661 [pool-7-thread-4-ScalaTest-running-ParametersTest] INFO  HelperUtils.Parameters$ - horizontal scaling of type simple selected
+20:39:36.662 [pool-7-thread-4-ScalaTest-running-ParametersTest] INFO  HelperUtils.Parameters$ - horizontal scaling of type medium selected
+20:39:36.663 [pool-7-thread-4-ScalaTest-running-ParametersTest] INFO  HelperUtils.Parameters$ - horizontal scaling of type large selected
+20:39:36.668 [pool-7-thread-4-ScalaTest-running-ParametersTest] ERROR HelperUtils.Parameters$ - Config wrong value not found
+20:39:36.672 [pool-7-thread-4-ScalaTest-running-ParametersTest] INFO  HelperUtils.Parameters$ - vertical scaling of type simple selected
+20:39:36.674 [pool-7-thread-4-ScalaTest-running-ParametersTest] INFO  HelperUtils.Parameters$ - vertical scaling of type medium selected
+20:39:36.676 [pool-7-thread-4-ScalaTest-running-ParametersTest] INFO  HelperUtils.Parameters$ - vertical scaling of type large selected
+20:39:36.680 [pool-7-thread-4-ScalaTest-running-ParametersTest] ERROR HelperUtils.Parameters$ - Config wrong value not found
+20:39:36.685 [pool-7-thread-4-ScalaTest-running-ParametersTest] INFO  HelperUtils.Parameters$ - vm of type simple selected
+20:39:36.686 [pool-7-thread-4-ScalaTest-running-ParametersTest] INFO  HelperUtils.Parameters$ - vm of type medium selected
+20:39:36.687 [pool-7-thread-4-ScalaTest-running-ParametersTest] INFO  HelperUtils.Parameters$ - vm of type large selected
+20:39:36.691 [pool-7-thread-4-ScalaTest-running-ParametersTest] ERROR HelperUtils.Parameters$ - Config wrong value not found
+20:39:36.718 [pool-7-thread-2-ScalaTest-running-VmComponentTest] INFO  CloudComponents.ScalingComponent$ - Loading
+20:39:36.721 [pool-7-thread-2-ScalaTest-running-VmComponentTest] INFO  HelperUtils.Parameters$ - scaling of type simple selected
+20:39:36.722 [pool-7-thread-2-ScalaTest-running-VmComponentTest] INFO  CloudComponents.VmComponent$ - vm created
+20:39:36.723 [pool-7-thread-2-ScalaTest-running-VmComponentTest] INFO  CloudComponents.VmComponent$ - Creating a new vm of type medium
+20:39:36.724 [pool-7-thread-2-ScalaTest-running-VmComponentTest] INFO  HelperUtils.Parameters$ - vm of type medium selected
+20:39:36.735 [pool-7-thread-2-ScalaTest-running-VmComponentTest] INFO  HelperUtils.Parameters$ - scaling of type medium selected
+20:39:36.736 [pool-7-thread-2-ScalaTest-running-VmComponentTest] INFO  CloudComponents.VmComponent$ - vm created
+20:39:36.738 [pool-7-thread-2-ScalaTest-running-VmComponentTest] INFO  CloudComponents.VmComponent$ - Creating a new vm of type large
+20:39:36.739 [pool-7-thread-2-ScalaTest-running-VmComponentTest] INFO  HelperUtils.Parameters$ - vm of type large selected
+20:39:36.740 [pool-7-thread-2-ScalaTest-running-VmComponentTest] INFO  HelperUtils.Parameters$ - scaling of type large selected
+20:39:36.741 [pool-7-thread-8-ScalaTest-running-HostComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.741 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.742 [pool-7-thread-2-ScalaTest-running-VmComponentTest] INFO  CloudComponents.VmComponent$ - vm created
+20:39:36.742 [pool-7-thread-8-ScalaTest-running-HostComponentTest] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:39:36.743 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:39:36.746 [pool-7-thread-8-ScalaTest-running-HostComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type medium
+20:39:36.747 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type simple
+20:39:36.750 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.751 [pool-7-thread-8-ScalaTest-running-HostComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.751 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:39:36.752 [pool-7-thread-8-ScalaTest-running-HostComponentTest] INFO  HelperUtils.Parameters$ - host of type large selected
+20:39:36.753 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type medium
+20:39:36.755 [pool-7-thread-8-ScalaTest-running-HostComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type large
+20:39:36.757 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.763 [pool-7-thread-8-ScalaTest-running-HostComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.801 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  C.DatacenterComponent$ - datacenter created
+20:39:36.801 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - datacenter of type medium selected
+20:39:36.802 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  C.DatacenterComponent$ - Creating a new datacenter of type medium
+20:39:36.803 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:39:36.804 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type simple
+20:39:36.805 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.806 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:39:36.807 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type simple
+20:39:36.808 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.809 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:39:36.811 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type medium
+20:39:36.812 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.813 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:39:36.814 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type medium
+20:39:36.816 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.816 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:39:36.817 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type medium
+20:39:36.818 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.819 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:39:36.820 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type medium
+20:39:36.821 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.822 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:39:36.823 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type medium
+20:39:36.824 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.826 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  C.DatacenterComponent$ - datacenter created
+20:39:36.827 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - datacenter of type large selected
+20:39:36.828 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  C.DatacenterComponent$ - Creating a new datacenter of type large
+20:39:36.829 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:39:36.840 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type medium
+20:39:36.842 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.843 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:39:36.844 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type medium
+20:39:36.846 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.847 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:39:36.848 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type medium
+20:39:36.849 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.850 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:39:36.851 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type medium
+20:39:36.852 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.853 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:39:36.854 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type medium
+20:39:36.856 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.858 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:39:36.859 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type medium
+20:39:36.860 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.862 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - host of type large selected
+20:39:36.872 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type large
+20:39:36.876 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.877 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - host of type large selected
+20:39:36.878 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type large
+20:39:36.880 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.881 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - host of type large selected
+20:39:36.881 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type large
+20:39:36.883 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.884 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - host of type large selected
+20:39:36.885 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type large
+20:39:36.886 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.887 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - host of type large selected
+20:39:36.888 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type large
+20:39:36.890 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.891 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - host of type large selected
+20:39:36.893 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type large
+20:39:36.895 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.896 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  HelperUtils.Parameters$ - host of type large selected
+20:39:36.896 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - Creating a new host of type large
+20:39:36.898 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  CloudComponents.HostComponent$ - host created
+20:39:36.900 [pool-7-thread-5-ScalaTest-running-DatacenterComponentTest] INFO  C.DatacenterComponent$ - datacenter created
+20:40:10.686 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Starting simulation with config config1
+20:40:10.733 [sbt-bg-threads-1] INFO  CloudComponents.VmComponent$ - Creating a new vm of type simple
+20:40:10.733 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - vm of type simple selected
+20:40:10.766 [sbt-bg-threads-1] INFO  CloudComponents.ScalingComponent$ - Loading
+20:40:10.766 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - scaling of type simple selected
+20:40:10.766 [sbt-bg-threads-1] INFO  CloudComponents.VmComponent$ - vm created
+20:40:10.766 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - datacenter of type simple selected
+20:40:10.766 [sbt-bg-threads-1] INFO  C.DatacenterComponent$ - Creating a new datacenter of type simple
+20:40:10.781 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:40:10.781 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - Creating a new host of type simple
+20:40:10.812 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - host created
+20:40:10.812 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:40:10.812 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - Creating a new host of type simple
+20:40:10.812 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - host created
+20:40:10.812 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:40:10.812 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - Creating a new host of type medium
+20:40:10.812 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - host created
+20:40:10.859 [sbt-bg-threads-1] INFO  C.DatacenterComponent$ - datacenter created
+20:40:10.859 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - datacenter of type simple selected
+20:40:10.859 [sbt-bg-threads-1] INFO  C.DatacenterComponent$ - Creating a new datacenter of type simple
+20:40:10.859 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:40:10.866 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - Creating a new host of type simple
+20:40:10.866 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - host created
+20:40:10.866 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:40:10.866 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - Creating a new host of type simple
+20:40:10.866 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - host created
+20:40:10.866 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:40:10.866 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - Creating a new host of type medium
+20:40:10.866 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - host created
+20:40:10.866 [sbt-bg-threads-1] INFO  C.DatacenterComponent$ - datacenter created
+20:40:10.875 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - cloudlet of type light selected
+20:40:10.875 [sbt-bg-threads-1] INFO  CloudComponents.CloudletComponent$ - Creating a new cloudlet of type light
+20:40:10.875 [sbt-bg-threads-1] INFO  CloudComponents.CloudletComponent$ - cloudlet created
+20:40:10.890 [sbt-bg-threads-1] INFO  CloudSim - 
+================== Starting CloudSim Plus 7.3.0 ==================
+
+20:40:10.890 [sbt-bg-threads-1] INFO  DatacenterBroker - DatacenterBrokerSimple1 is starting...
+20:40:10.890 [sbt-bg-threads-1] INFO  Datacenter - 0.00: NetworkDatacenter2 is starting...
+20:40:10.890 [sbt-bg-threads-1] INFO  Host - 0.00: Host 0/DC 2 is being powered on (expected time: 5.0 seconds).
+20:40:10.890 [sbt-bg-threads-1] INFO  Host - 0.00: Host 1/DC 2 is being powered on (expected time: 5.0 seconds).
+20:40:10.890 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch3 is starting...
+20:40:10.906 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch4 is starting...
+20:40:10.906 [sbt-bg-threads-1] INFO  Datacenter - 0.00: NetworkDatacenter5 is starting...
+20:40:10.906 [sbt-bg-threads-1] INFO  Host - 0.00: Host 0/DC 5 is being powered on (expected time: 5.0 seconds).
+20:40:10.906 [sbt-bg-threads-1] INFO  Host - 0.00: Host 1/DC 5 is being powered on (expected time: 5.0 seconds).
+20:40:10.906 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch6 is starting...
+20:40:10.906 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch7 is starting...
+20:40:10.906 [sbt-bg-threads-1] INFO  CloudSim - Entities started.
+20:40:10.906 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple1: List of 2 datacenters(s) received.
+20:40:10.906 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple1: Trying to create Vm 0 in NetworkDatacenter2
+20:40:10.922 [sbt-bg-threads-1] WARN  VmAllocationPolicy - 3.20: VmAllocationPolicySimple: No suitable host found for Vm 0 in Datacenter 2
+20:40:10.922 [sbt-bg-threads-1] INFO  Host - 5.00: Host 0/DC 2 is powered on.
+20:40:10.922 [sbt-bg-threads-1] INFO  Host - 5.00: Host 1/DC 2 is powered on.
+20:40:10.922 [sbt-bg-threads-1] INFO  Host - 5.00: Host 0/DC 5 is powered on.
+20:40:10.922 [sbt-bg-threads-1] INFO  Host - 5.00: Host 1/DC 5 is powered on.
+20:40:10.922 [sbt-bg-threads-1] INFO  DatacenterBroker - 6.50: DatacenterBrokerSimple1: Trying to create Vm 0 in NetworkDatacenter5
+20:40:10.937 [sbt-bg-threads-1] INFO  VmAllocationPolicy - 7.60: VmAllocationPolicySimple: Vm 0 has been allocated to Host 0/DC 5
+20:40:10.937 [sbt-bg-threads-1] INFO  DatacenterBroker - 8.80: DatacenterBrokerSimple1: Sending Cloudlet 0 to Vm 0 in Host 0/DC 5.
+20:40:10.937 [sbt-bg-threads-1] INFO  DatacenterBroker - 8.80: DatacenterBrokerSimple1: All 1 waiting Cloudlets submitted to some VM.
+20:40:10.937 [sbt-bg-threads-1] INFO  DatacenterBroker - 10.26: DatacenterBrokerSimple1: Cloudlet 0 finished in Vm 0 and returned to broker.
+20:40:10.953 [sbt-bg-threads-1] INFO  CloudSim - 10.37: Processing last events before simulation shutdown.
+20:40:10.953 [sbt-bg-threads-1] INFO  DatacenterBroker - 10.37: DatacenterBrokerSimple1 is shutting down...
+20:40:10.953 [sbt-bg-threads-1] INFO  DatacenterBroker - 10.37: DatacenterBrokerSimple1: Requesting Vm 0 destruction.
+20:40:10.953 [sbt-bg-threads-1] INFO  Datacenter - 11.47: NetworkDatacenter: Vm 0 destroyed on Host 0/DC 5. 
+20:40:10.953 [sbt-bg-threads-1] INFO  CloudSim - Simulation: No more future events
+
+20:40:10.953 [sbt-bg-threads-1] INFO  CloudInformationService - CloudInformationService0: Notify all CloudSim Plus entities to shutdown.
+
+20:40:10.953 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch3 is shutting down...
+20:40:10.953 [sbt-bg-threads-1] INFO  Datacenter - 11.47: NetworkDatacenter5 is shutting down...
+20:40:10.953 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch7 is shutting down...
+20:40:10.953 [sbt-bg-threads-1] INFO  CloudSim - 
+================== Simulation finished at time 11.47 ==================
+
+20:40:11.031 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Total cost ($) for   1 active VMs from   1 total Vms created : 
+20:40:11.031 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Procssing cost:       0.31 $
+20:40:11.031 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Memory cost            10.00 $ 
+20:40:11.031 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Storage cost:          1.00 $
+20:40:11.031 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Bandwidth cost:        5.12 $
+20:40:11.031 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Total cost:            16.43 $ 
+20:40:11.031 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Simulation terminated
+20:42:48.953 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Starting simulation with config config1
+20:42:49.016 [sbt-bg-threads-1] INFO  CloudComponents.VmComponent$ - Creating a new vm of type simple
+20:42:49.016 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - vm of type simple selected
+20:42:49.048 [sbt-bg-threads-1] INFO  CloudComponents.ScalingComponent$ - Loading
+20:42:49.048 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - scaling of type simple selected
+20:42:49.048 [sbt-bg-threads-1] INFO  CloudComponents.VmComponent$ - vm created
+20:42:49.063 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - datacenter of type simple selected
+20:42:49.063 [sbt-bg-threads-1] INFO  C.DatacenterComponent$ - Creating a new datacenter of type simple
+20:42:49.079 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:42:49.079 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - Creating a new host of type simple
+20:42:49.079 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - host created
+20:42:49.079 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:42:49.079 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - Creating a new host of type simple
+20:42:49.079 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - host created
+20:42:49.079 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:42:49.079 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - Creating a new host of type medium
+20:42:49.094 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - host created
+20:42:49.110 [sbt-bg-threads-1] INFO  C.DatacenterComponent$ - datacenter created
+20:42:49.126 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - datacenter of type simple selected
+20:42:49.126 [sbt-bg-threads-1] INFO  C.DatacenterComponent$ - Creating a new datacenter of type simple
+20:42:49.126 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:42:49.126 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - Creating a new host of type simple
+20:42:49.126 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - host created
+20:42:49.126 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type simple selected
+20:42:49.126 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - Creating a new host of type simple
+20:42:49.126 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - host created
+20:42:49.126 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - host of type medium selected
+20:42:49.126 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - Creating a new host of type medium
+20:42:49.126 [sbt-bg-threads-1] INFO  CloudComponents.HostComponent$ - host created
+20:42:49.126 [sbt-bg-threads-1] INFO  C.DatacenterComponent$ - datacenter created
+20:42:49.142 [sbt-bg-threads-1] INFO  HelperUtils.Parameters$ - cloudlet of type light selected
+20:42:49.142 [sbt-bg-threads-1] INFO  CloudComponents.CloudletComponent$ - Creating a new cloudlet of type light
+20:42:49.142 [sbt-bg-threads-1] INFO  CloudComponents.CloudletComponent$ - cloudlet created
+20:42:49.157 [sbt-bg-threads-1] INFO  CloudSim - 
+================== Starting CloudSim Plus 7.3.0 ==================
+
+20:42:49.157 [sbt-bg-threads-1] INFO  DatacenterBroker - DatacenterBrokerSimple1 is starting...
+20:42:49.157 [sbt-bg-threads-1] INFO  Datacenter - 0.00: NetworkDatacenter2 is starting...
+20:42:49.157 [sbt-bg-threads-1] INFO  Host - 0.00: Host 0/DC 2 is being powered on (expected time: 5.0 seconds).
+20:42:49.157 [sbt-bg-threads-1] INFO  Host - 0.00: Host 1/DC 2 is being powered on (expected time: 5.0 seconds).
+20:42:49.157 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch3 is starting...
+20:42:49.157 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch4 is starting...
+20:42:49.157 [sbt-bg-threads-1] INFO  Datacenter - 0.00: NetworkDatacenter5 is starting...
+20:42:49.157 [sbt-bg-threads-1] INFO  Host - 0.00: Host 0/DC 5 is being powered on (expected time: 5.0 seconds).
+20:42:49.157 [sbt-bg-threads-1] INFO  Host - 0.00: Host 1/DC 5 is being powered on (expected time: 5.0 seconds).
+20:42:49.157 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch6 is starting...
+20:42:49.157 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch7 is starting...
+20:42:49.157 [sbt-bg-threads-1] INFO  CloudSim - Entities started.
+20:42:49.173 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple1: List of 2 datacenters(s) received.
+20:42:49.173 [sbt-bg-threads-1] INFO  DatacenterBroker - 0.00: DatacenterBrokerSimple1: Trying to create Vm 0 in NetworkDatacenter2
+20:42:49.189 [sbt-bg-threads-1] WARN  VmAllocationPolicy - 3.20: VmAllocationPolicySimple: No suitable host found for Vm 0 in Datacenter 2
+20:42:49.189 [sbt-bg-threads-1] INFO  Host - 5.00: Host 0/DC 2 is powered on.
+20:42:49.189 [sbt-bg-threads-1] INFO  Host - 5.00: Host 1/DC 2 is powered on.
+20:42:49.189 [sbt-bg-threads-1] INFO  Host - 5.00: Host 0/DC 5 is powered on.
+20:42:49.189 [sbt-bg-threads-1] INFO  Host - 5.00: Host 1/DC 5 is powered on.
+20:42:49.202 [sbt-bg-threads-1] INFO  DatacenterBroker - 6.50: DatacenterBrokerSimple1: Trying to create Vm 0 in NetworkDatacenter5
+20:42:49.205 [sbt-bg-threads-1] INFO  VmAllocationPolicy - 7.60: VmAllocationPolicySimple: Vm 0 has been allocated to Host 0/DC 5
+20:42:49.205 [sbt-bg-threads-1] INFO  DatacenterBroker - 8.80: DatacenterBrokerSimple1: Sending Cloudlet 0 to Vm 0 in Host 0/DC 5.
+20:42:49.205 [sbt-bg-threads-1] INFO  DatacenterBroker - 8.80: DatacenterBrokerSimple1: All 1 waiting Cloudlets submitted to some VM.
+20:42:49.220 [sbt-bg-threads-1] INFO  DatacenterBroker - 10.26: DatacenterBrokerSimple1: Cloudlet 0 finished in Vm 0 and returned to broker.
+20:42:49.220 [sbt-bg-threads-1] INFO  CloudSim - 10.37: Processing last events before simulation shutdown.
+20:42:49.220 [sbt-bg-threads-1] INFO  DatacenterBroker - 10.37: DatacenterBrokerSimple1 is shutting down...
+20:42:49.220 [sbt-bg-threads-1] INFO  DatacenterBroker - 10.37: DatacenterBrokerSimple1: Requesting Vm 0 destruction.
+20:42:49.220 [sbt-bg-threads-1] INFO  Datacenter - 11.47: NetworkDatacenter: Vm 0 destroyed on Host 0/DC 5. 
+20:42:49.220 [sbt-bg-threads-1] INFO  CloudSim - Simulation: No more future events
+
+20:42:49.220 [sbt-bg-threads-1] INFO  CloudInformationService - CloudInformationService0: Notify all CloudSim Plus entities to shutdown.
+
+20:42:49.220 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch3 is shutting down...
+20:42:49.220 [sbt-bg-threads-1] INFO  Datacenter - 11.47: NetworkDatacenter5 is shutting down...
+20:42:49.220 [sbt-bg-threads-1] INFO  AbstractSwitch - EdgeSwitch7 is shutting down...
+20:42:49.220 [sbt-bg-threads-1] INFO  CloudSim - 
+================== Simulation finished at time 11.47 ==================
+
+20:42:49.298 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Total cost ($) for   1 active VMs from   1 total Vms created : 
+20:42:49.298 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Procssing cost:       0.31 $
+20:42:49.298 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Memory cost            10.00 $ 
+20:42:49.298 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Storage cost:          1.00 $
+20:42:49.298 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Bandwidth cost:        5.12 $
+20:42:49.298 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Total cost:            16.43 $ 
+20:42:49.302 [sbt-bg-threads-1] INFO  Configurations.Configuration$ - Simulation terminated

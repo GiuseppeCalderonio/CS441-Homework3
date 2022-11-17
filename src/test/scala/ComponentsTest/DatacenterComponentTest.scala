@@ -3,8 +3,7 @@ package ComponentsTest
 import org.scalatest.PrivateMethodTester
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
-import Components.*
-import Components.DatacenterComponent.getDatacenterConfig
+import CloudComponents.DatacenterComponent.getDatacenterConfig
 import HelperUtils.Parameters
 import org.cloudbus.cloudsim.core.CloudSim
 import org.cloudbus.cloudsim.datacenters.Datacenter
@@ -16,7 +15,7 @@ class DatacenterComponentTest extends AnyFlatSpec with Matchers with PrivateMeth
 
   it should "Initialize correctly Datacenter types" in {
 
-    implicit val cloudsim = new CloudSim()
+    implicit val cloudsim: CloudSim = new CloudSim()
 
     Parameters.datacenterTypes.foreach(componentType => getDatacenterConfig(componentType) mustBe a[Datacenter])
 

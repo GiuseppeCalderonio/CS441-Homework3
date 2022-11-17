@@ -1,7 +1,7 @@
-package Components
+package CloudComponents
 
+import HelperUtils.{CreateLogger, Parameters}
 import org.cloudbus.cloudsim.cloudlets.Cloudlet
-import HelperUtils.CreateLogger
 import org.cloudbus.cloudsim.core.CloudSim
 import org.cloudbus.cloudsim.datacenters.Datacenter
 import org.cloudbus.cloudsim.datacenters.network.NetworkDatacenter
@@ -10,7 +10,7 @@ import org.cloudbus.cloudsim.hosts.{Host, HostSimple, HostSuitability}
 import org.cloudbus.cloudsim.network.switches.EdgeSwitch
 import org.cloudbus.cloudsim.power.models.PowerModelHostSimple
 import org.cloudbus.cloudsim.resources.{Pe, PeSimple}
-import HelperUtils.Parameters
+
 import scala.jdk.CollectionConverters.*
 import scala.math.*
 
@@ -55,7 +55,7 @@ object HostComponent {
     val shutdownPower = config.getDouble(s"$powerModelPartialPath.shutdownPower")
 
     val host = new NetworkHost(ram, bandwidth, storage, createPes(pes, mips).asJava)
-    val powerModel = new PowerModelHostSimple(maxPower, staticPower);
+    val powerModel = new PowerModelHostSimple(maxPower, staticPower)
     powerModel.setStartupDelay(startupDelay)
       .setShutDownDelay(shutdownDelay)
       .setStartupPower(startupPower)

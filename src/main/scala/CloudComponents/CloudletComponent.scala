@@ -1,14 +1,12 @@
-package Components
+package CloudComponents
 
-import HelperUtils.CreateLogger
-import org.cloudbus.cloudsim.cloudlets.{Cloudlet, CloudletSimple}
+import HelperUtils.{CreateLogger, Parameters}
 import com.typesafe.config.Config
 import org.cloudbus.cloudsim.cloudlets.network.{CloudletTask, NetworkCloudlet}
+import org.cloudbus.cloudsim.cloudlets.{Cloudlet, CloudletSimple}
 import org.cloudbus.cloudsim.utilizationmodels.UtilizationModelDynamic
-import HelperUtils.Parameters
 
 import scala.util.{Failure, Success, Try}
-import scala.util.Try
 
 object CloudletComponent {
 

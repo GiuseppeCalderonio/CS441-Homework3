@@ -1,6 +1,6 @@
 package ComponentsTest
 
-import Components.VmComponent.getVmConfig
+import CloudComponents.VmComponent.getVmConfig
 import HelperUtils.Parameters
 import org.scalatest.PrivateMethodTester
 import org.scalatest.flatspec.AnyFlatSpec

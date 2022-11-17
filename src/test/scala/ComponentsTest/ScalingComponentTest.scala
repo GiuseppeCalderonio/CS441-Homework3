@@ -3,7 +3,7 @@ package ComponentsTest
 import org.scalatest.PrivateMethodTester
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
-import Components.ScalingComponent.getScalingConfig
+import CloudComponents.ScalingComponent.getScalingConfig
 import HelperUtils.Parameters
 import org.cloudsimplus.autoscaling.{HorizontalVmScaling, VerticalVmScaling}
 import org.scalatest.matchers.must.Matchers.mustBe

@@ -1,9 +1,9 @@
 package Configurations
 
-import Components.CloudletComponent.getCloudletList
+import CloudComponents.CloudletComponent.getCloudletList
+import CloudComponents.DatacenterComponent.getDatacenterList
+import CloudComponents.VmComponent.getVmList
 import HelperUtils.CreateLogger
-import Components.DatacenterComponent.getDatacenterList
-import Components.VmComponent.getVmList
 import com.typesafe.config.{Config, ConfigFactory}
 import org.cloudbus.cloudsim.brokers.{DatacenterBroker, DatacenterBrokerSimple}
 import org.cloudbus.cloudsim.cloudlets.Cloudlet
@@ -25,7 +25,7 @@ object Configuration {
   private val rootConfigName = Parameters.configsConfig
 
 
-  def getConfig(configName : String) : Unit = {
+  def getConfig(configName : String) : Int = {
 
     //val parsedConfig = ConfigFactory.parseFile(new File("src/main/resources/application.conf"))
 
@@ -47,7 +47,7 @@ object Configuration {
     broker.submitCloudletList(cloudletList.asJava)
     broker.submitVmList(vmList.asJava)
 
-    configureNetwork(broker, datacenterList, cloudsim, s"topologies/$configName.brite")
+    configureNetwork(broker, datacenterList, cloudsim, s"src/main/resources/topologies/$configName.brite")
 
     //assert(vmList.forall(vm => vm.isInstanceOf[NetworkVm]))
 
@@ -58,6 +58,8 @@ object Configuration {
     computeCost(broker)
 
     logger.info(s"Simulation terminated")
+
+    0
 
   }
 

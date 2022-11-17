@@ -1,13 +1,13 @@
-package Components
+package CloudComponents
 
+import HelperUtils.{CreateLogger, Parameters}
+import CloudComponents.ScalingComponent.*
 import org.cloudbus.cloudsim.hosts.{Host, HostSimple}
-import HelperUtils.CreateLogger
 import org.cloudbus.cloudsim.power.models.PowerModelHostSimple
 import org.cloudbus.cloudsim.resources.{Pe, PeSimple}
 import org.cloudbus.cloudsim.vms.network.NetworkVm
 import org.cloudbus.cloudsim.vms.{Vm, VmSimple}
-import ScalingComponent._
-import HelperUtils.Parameters
+
 import scala.util.Random
 
 object VmComponent {
