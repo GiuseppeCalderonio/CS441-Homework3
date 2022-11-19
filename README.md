@@ -166,8 +166,40 @@ and the jar file should have been produced there.
 
 ### Local
 
+In order to run the jar locally, run the following command :
 
+```
+java -cp <path-to-jar-file> Configurations.<name-of-main-method>
+```
 
+Where ```<path-to-jar-file>``` is the path of the jar file in the
+file system, while ```<name-of-main-method>``` is the name
+of the main method to run (it will be most likely something
+like runConfn where n is the number of the configuration)
+
+However, another constraint is required : in the same folder
+of the jar file the directory topologies MUST be included
+in order to work properly. That's because the CloudSimPlus
+file loading process from resources seems to have a 
+bug because it adds a default character ```File.separator```
+and it i not compatible with the sbt runtime environment.
+
+If it was not the case, the resource folder may have been used.
 
 ### Docker
+
+In order to build the docker image, run the following command :
+
+```
+docker build -t cs441-homework3 .
+```
+
+And to run it use the command :
+
+```
+docker run cs441-homework3
+```
+
+The docker runs the tests and then executes the mixed simulation
+of Saas, Paas and Iaas.
 

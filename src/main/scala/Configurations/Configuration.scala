@@ -5,7 +5,7 @@ import CloudComponents.DatacenterComponent.getDatacenterList
 import CloudComponents.VmComponent.getVmList
 import HelperUtils.CreateLogger
 import com.typesafe.config.{Config, ConfigFactory}
-import org.cloudbus.cloudsim.brokers.{DatacenterBroker, DatacenterBrokerSimple}
+import org.cloudbus.cloudsim.brokers.{DatacenterBroker, DatacenterBrokerBestFit, DatacenterBrokerSimple}
 import org.cloudbus.cloudsim.cloudlets.Cloudlet
 import org.cloudbus.cloudsim.core.CloudSim
 import org.cloudbus.cloudsim.datacenters.Datacenter
@@ -56,7 +56,7 @@ object Configuration {
     implicit val cloudsim: CloudSim = new CloudSim()
 
     // creates broker
-    val broker = new DatacenterBrokerSimple(cloudsim)
+    val broker = new DatacenterBrokerBestFit(cloudsim)
 
     // loads compnents
     val datacenterList = getComponentList[Datacenter]("datacenters", getDatacenterList, config)
@@ -69,6 +69,7 @@ object Configuration {
 
     if(isNetworkConfigured){
       // configure network
+
       val networkTopologyFileName = s"topologies/$configName.brite"
       configureNetwork(broker, datacenterList, cloudsim, networkTopologyFileName)
     }
@@ -110,7 +111,13 @@ object Configuration {
 
     })
 
-    getComponentFunction(list_Count_Component)
+    val listt = getComponentFunction(list_Count_Component)
+
+    println("\n\n\n\n\n\n")
+    println(listt.size)
+    println("\n\n\n\n\n\n")
+
+    listt
   }
 
   /**
@@ -122,6 +129,8 @@ object Configuration {
    *                                the network is configured
    */
   def configureNetwork(broker : DatacenterBroker, datacenters : List[Datacenter], simulation : CloudSim, networkTopologyFileName : String): Unit = {
+
+    logger.info(s"Configuring network from file $networkTopologyFileName")
 
     val networkTopology = BriteNetworkTopology.getInstance(networkTopologyFileName)
 

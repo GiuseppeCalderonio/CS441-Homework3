@@ -1,4 +1,4 @@
-package example
+package Configurations
 
 import Configurations.Configuration
 
