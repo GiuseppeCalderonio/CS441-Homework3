@@ -140,7 +140,7 @@ object HostComponent {
     val numSwithces = ceil(hostList.length.toDouble / 3.0).toInt
 
     // create switches
-    val switchList = (0 to numSwithces)
+    val switchList = (0 until numSwithces)
       .map(_ => new EdgeSwitch(simulation, datacenter))
 
     // add switches
