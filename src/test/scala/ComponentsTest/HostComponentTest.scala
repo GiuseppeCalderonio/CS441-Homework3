@@ -21,4 +21,10 @@ class HostComponentTest extends AnyFlatSpec with Matchers with PrivateMethodTest
 
   }
 
+  it should "Throw a runtime error when the host component type is wrong" in {
+
+    an[RuntimeException] should be thrownBy getHostConfig("wrong value")
+
+  }
+
 }

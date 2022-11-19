@@ -4,6 +4,7 @@ import org.scalatest.PrivateMethodTester
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 import CloudComponents.ScalingComponent.{getHorizontalScalingConfig, getVerticalScalingConfig}
+import CloudComponents.VmComponent.getVmConfig
 import HelperUtils.Parameters
 import org.cloudsimplus.autoscaling.{HorizontalVmScaling, VerticalVmScaling}
 import org.scalatest.matchers.must.Matchers.mustBe
@@ -21,9 +22,21 @@ class ScalingComponentTest extends AnyFlatSpec with Matchers with PrivateMethodT
 
   }
 
+  it should "Throw a runtime error when the horizontal scaling component type is wrong" in {
+
+    an[RuntimeException] should be thrownBy getHorizontalScalingConfig("wrong value")
+
+  }
+
   it should "Initialize correctly vertical scaling types" in {
 
     Parameters.verticalScalingTypes.foreach(componentType => getVerticalScalingConfig(componentType) mustBe a[VerticalVmScaling])
+
+  }
+
+  it should "Throw a runtime error when the vertical scaling component type is wrong" in {
+
+    an[RuntimeException] should be thrownBy getVerticalScalingConfig("wrong value")
 
   }
 

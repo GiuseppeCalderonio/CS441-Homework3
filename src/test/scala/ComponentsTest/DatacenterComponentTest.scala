@@ -16,11 +16,17 @@ class DatacenterComponentTest extends AnyFlatSpec with Matchers with PrivateMeth
 
   behavior of "Datacenter Component Test"
 
+  implicit val cloudsim: CloudSim = new CloudSim()
+
   it should "Initialize correctly Datacenter types" in {
 
-    implicit val cloudsim: CloudSim = new CloudSim()
-
     Parameters.datacenterTypes.foreach(componentType => getDatacenterConfig(componentType) mustBe a[Datacenter])
+
+  }
+
+  it should "Throw a runtime error when the datacenter component type is wrong" in {
+
+    an[RuntimeException] should be thrownBy getDatacenterConfig("wrong value")
 
   }
 

@@ -21,5 +21,11 @@ class VmComponentTest extends AnyFlatSpec with Matchers with PrivateMethodTester
     Parameters.vmTypes.foreach(componentType => getVmConfig(componentType) mustBe a[Vm])
 
   }
+  
+  it should "Throw a runtime error when the vm component component type is wrong" in {
+
+    an [RuntimeException] should be thrownBy getVmConfig("wrong value")
+    
+  }
 
 }

@@ -69,7 +69,7 @@ object Configuration {
 
     if(isNetworkConfigured){
       // configure network
-      val networkTopologyFileName = s"src/main/resources/topologies/$configName.brite"
+      val networkTopologyFileName = s"topologies/$configName.brite"
       configureNetwork(broker, datacenterList, cloudsim, networkTopologyFileName)
     }
 

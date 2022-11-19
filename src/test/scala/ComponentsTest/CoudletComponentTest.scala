@@ -21,5 +21,11 @@ class CoudletComponentTest extends AnyFlatSpec with Matchers with PrivateMethodT
 
   }
 
+  it should "Throw a runtime error when the cloudlet component type is wrong" in {
+
+    an[RuntimeException] should be thrownBy getCloudletConfig("wrong value")
+
+  }
+
 
 }

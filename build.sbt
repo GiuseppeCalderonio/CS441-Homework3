@@ -17,13 +17,24 @@ libraryDependencies ++= Seq(
   "ch.qos.logback" % "logback-core" % logbackVersion,
   "ch.qos.logback" % "logback-classic" % logbackVersion,
   "org.slf4j" % "slf4j-api" % sfl4sVersion,
-  "com.typesafe" % "config" % typesafeConfigVersion,
   "commons-io" % "commons-io" % apacheCommonIOVersion,
   "org.scalactic" %% "scalactic" % scalacticVersion,
   "org.scalatest" %% "scalatest" % scalacticVersion % Test,
   "org.scalatest" %% "scalatest-featurespec" % scalacticVersion % Test,
   "org.cloudsimplus" % "cloudsim-plus" % cloudSimPlusVersion,
+  "com.typesafe" % "config" % typesafeConfigVersion
 
 )
 
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs@_*) =>
+    xs map {
+      _.toLowerCase
+    } match {
+      case "services" :: xs =>
+        MergeStrategy.filterDistinctLines
+      case _ => MergeStrategy.discard
+    }
+  case x => MergeStrategy.first
+}
 

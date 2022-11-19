@@ -100,14 +100,74 @@ approach has the benefit of being scalable with respect to the simulation comple
 but has the drawback of limited customization
 
 The second approach was chosen, and each component follows more or less the same
-principle, it can be of tree types:
+principle, it can be of three types:
 
 * simple : this element represents a component
  that has / needs low computational power but is cheap
 * medium : this element represents a tradeoff between computational power and cost
 * large : this element represents a component
-  that has / needs high computational power but is expensive+
+  that has / needs high computational power but is expensive
 
-List of components description can be found [here]()
+List of components description can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components)
 
+### Simulations
+
+The total number of simulation analyzed is 8.
+
+They can be divided in 3 main categories :
+
+1. Simulations where one component at a time was tested
+with its corresponding workload with respect to complexity.
+More on these simulations can be found [here]()
+2. Simulations where different kind of components were combined
+together in complex structures to evaluate different
+parameters selection.
+More on these simulations can be found [here]()
+3. Simulation where three datacenter were combined to 
+represent Saas, Paas, Iaas and Faas and corresponding
+workloads were assigned to them.
+More on these simulation can be found [here]()
+
+## Testing
+
+In order to test the program, since every simulation
+strongly depends on the configuration parameters 
+applied to them, was based on the correctness of the
+code itself, and it guarantees that each component,
+if as input is given a correct configuration parameter
+name, it returns a correct instance of the object
+created, otherwise it throws an error
+
+To run the test, go to the root directory of the
+project and run the following command :
+
+```
+sbt clean compile test
+```
+
+More info about test can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/tree/master/src/test/scala)
+
+## Deployment
+
+### Jar file
+
+In order to do a local deployment, the
+**Assembly** sbt plugin has been used, that allows
+to resolve dependencies and create a single jar from
+the big project.
+
+In order to create the jar file go to the root
+of the project and run the following command :
+```
+sbt clean compile assembly
+```
+Then go to the directory target/scala-3.0.2/
+and the jar file should have been produced there.
+
+### Local
+
+
+
+
+### Docker
 

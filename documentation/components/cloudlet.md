@@ -1,5 +1,7 @@
 # Cloudlet
 
+## Description
+
 This component represents the cloudlet.
 
 The configurable parameters are:
@@ -11,6 +13,6 @@ The configurable parameters are:
 * PEs : number of PEs of the cloudlet [Long]
 * sizes : sizes of input and output files in Bytes of the cloudlet [Long]
 
-## Simple
+## Types
 
-![Cloudlet Simple](/documentation/images/Cloudlet.png?raw=true "Cloudlet simple")
+![Cloudlet types](/documentation/images/Cloudlet.png?raw=true "Cloudlet types")
