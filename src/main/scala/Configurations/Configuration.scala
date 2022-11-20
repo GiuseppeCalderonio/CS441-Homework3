@@ -52,28 +52,34 @@ object Configuration {
     // loads config
     val config = rootConfigName.getConfig(configName)
 
+    logger.info(s"Creating new simulation")
     // creates simulation
     implicit val cloudsim: CloudSim = new CloudSim()
 
+    logger.info(s"Creating new Broker")
     // creates broker
     val broker = new DatacenterBrokerBestFit(cloudsim)
 
+    logger.info(s"Loading components")
     // loads compnents
     val datacenterList = getComponentList[Datacenter]("datacenters", getDatacenterList, config)
     val vmList = getComponentList[Vm]("vms", getVmList, config)
     val cloudletList = getComponentList[Cloudlet]("cloudlets", getCloudletList, config)
 
+    logger.info(s"Submitting Components")
     // submit compnents
     broker.submitCloudletList(cloudletList.asJava)
     broker.submitVmList(vmList.asJava)
 
     if(isNetworkConfigured){
-      // configure network
 
+      logger.info(s"Configuring network")
+      // configure network
       val networkTopologyFileName = s"topologies/$configName.brite"
       configureNetwork(broker, datacenterList, cloudsim, networkTopologyFileName)
     }
 
+    logger.info(s"Starting simulation")
     // start simulation
     cloudsim.start()
 
