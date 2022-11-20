@@ -6,7 +6,7 @@ object Configuration4 {
 
   @main def runConf4(): Unit = {
 
-    Configuration.getConfig(configName, false)
+    Configuration.getConfig(configName)
 
   }
 

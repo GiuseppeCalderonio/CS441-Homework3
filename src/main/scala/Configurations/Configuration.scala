@@ -111,13 +111,7 @@ object Configuration {
 
     })
 
-    val listt = getComponentFunction(list_Count_Component)
-
-    println("\n\n\n\n\n\n")
-    println(listt.size)
-    println("\n\n\n\n\n\n")
-
-    listt
+    getComponentFunction(list_Count_Component)
   }
 
   /**
