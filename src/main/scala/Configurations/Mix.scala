@@ -6,7 +6,7 @@ object Mix {
 
   @main def runConfMix(): Unit = {
 
-    Configuration.getConfig(configName, false)
+    Configuration.getConfig(configName)
 
   }
 

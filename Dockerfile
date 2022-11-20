@@ -26,7 +26,8 @@ RUN mkdir -p /root/build/project
 ADD build.sbt /root/build/
 ADD ./project/plugins.sbt /root/build/project
 ADD src /root/build/src
+ADD topologies /root/build/topologies
 
 WORKDIR /root/build
 
-CMD sbt clean compile test
+CMD sbt clean compile test "runMain Configurations.runConfMix"

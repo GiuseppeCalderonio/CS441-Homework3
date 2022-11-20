@@ -78,15 +78,12 @@ object HostComponent {
 
     val maxPower = config.getDouble(s"$powerModelPartialPath.maxPower")
     val staticPower = config.getDouble(s"$powerModelPartialPath.staticPower")
-    val startupDelay = config.getDouble(s"$powerModelPartialPath.startupDelay")
-    val shutdownDelay = config.getDouble(s"$powerModelPartialPath.shutdownDelay")
     val startupPower = config.getDouble(s"$powerModelPartialPath.startupPower")
     val shutdownPower = config.getDouble(s"$powerModelPartialPath.shutdownPower")
 
     val host = new NetworkHost(ram, bandwidth, storage, createPes(pes, mips).asJava)
     val powerModel = new PowerModelHostSimple(maxPower, staticPower)
-    powerModel.setStartupDelay(startupDelay)
-      .setShutDownDelay(shutdownDelay)
+    powerModel
       .setStartupPower(startupPower)
       .setShutDownPower(shutdownPower)
     host.setPowerModel(powerModel)
