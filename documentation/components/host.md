@@ -12,6 +12,7 @@ The configurable parameters are:
 * storage : total storage capacity in MegaBytes of the host [Long]
 * powerModel : power parameters of the host
 
+More info about the type of scaling can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/scaling.md)
 
 ## Types
 

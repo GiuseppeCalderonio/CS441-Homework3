@@ -59,3 +59,15 @@ in a large Datacenter that simulates the Iaas.
 Cloudlets are selected in a realistic way, such that 
 high workloads to Iaas are less frequent than tiny
 Saas or Faas workloads.
+
+Also in this case the network topology plays a 
+big role with respect to efficiency and pricing, since
+if we try to remove the network configuration
+as already done in [configuration 4](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/simulations/MultipleComponentsSimulation.md)
+, the resulting cost is **26501.90 $**
+
+More info about the types of datacenters can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/datacenter.md)
+
+More info about the types of cloudlets can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/cloudlet.md)
+
+More info about the type of VMs can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/vm.md)

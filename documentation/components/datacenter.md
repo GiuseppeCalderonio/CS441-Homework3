@@ -16,6 +16,8 @@ The configurable parameters are:
 * maximumUtilization : maximum utilization in percentage between 0 and 1 after which the migration triggers [Double]
 * hosts : array of hosts belonging to a datacenter
 
+More info on the types of hosts can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/host.md)
+
 ## Types
 
 ### Simple

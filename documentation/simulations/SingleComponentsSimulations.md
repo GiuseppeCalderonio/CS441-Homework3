@@ -13,7 +13,8 @@ In particular, the simulations test
 
 ### Simple
 
-This simulation can be also represented by a Saas with some Faas / microservices provided;
+[This simulation](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/src/main/resources/configs/simple.conf)
+can be also represented by a Saas with some Faas / microservices provided;
 Indeed, the cloudlets submitted are :
 
 1. Light : representing the typical Faas (for example an http request)
@@ -46,9 +47,17 @@ As we can see from the Host Id column, only one of the three simple hosts was us
 more complex workloads can be submitted; that's what we expect by a Saas / Faas since they should
 be able to process many data in few time.
 
+More info about the types of datacenters can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/datacenter.md)
+
+More info about the types of cloudlets can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/cloudlet.md)
+
+More info about the type of VMs can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/vm.md)
+
+
 ### Medium 
 
-This simulation can be also represented by a Paas;
+[This simulation](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/src/main/resources/configs/medium.conf)
+can be also represented by a Paas;
 Indeed, the cloudlets submitted are :
 
 1. Medium : representing the typical Paas, where higher workload compared to a typical Saas is required
@@ -77,9 +86,17 @@ However, we can see that only 2 of the three hosts are used in this simulation, 
 present in the Host Id column, so it means that this kind of datacenter can handle more cloudlets in 
 other VMs, but on average half of the Datacenter total power was exploited.
 
+More info about the types of datacenters can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/datacenter.md)
+
+More info about the types of cloudlets can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/cloudlet.md)
+
+More info about the type of VMs can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/vm.md)
+
+
 ### Large
 
-This simulation can be also represented by an Iaas;
+[This simulation](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/src/main/resources/configs/large.conf)
+can be also represented by an Iaas;
 Indeed, the cloudlets submitted are :
 
 1. Large : representing the typical Iaas, where higher workload and ability to customize compared to a typical Paas is required
@@ -107,3 +124,9 @@ since this type of datacenter is more suited to high intensive workloads like bi
 In total, 20 minutes of execution within a datacenter of supercomputers was simulated.
 Being this type of datacenter an high intensive one, only 2 out of three available hosts were used, meaning that
 probably other high intensive set of cloudlets can be scheduled.
+
+More info about the types of datacenters can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/datacenter.md)
+
+More info about the types of cloudlets can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/cloudlet.md)
+
+More info about the type of VMs can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/vm.md)

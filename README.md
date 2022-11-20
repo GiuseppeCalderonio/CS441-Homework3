@@ -118,15 +118,15 @@ They can be divided in 3 main categories :
 
 1. Simulations where one component at a time was tested
 with its corresponding workload with respect to complexity.
-More on these simulations can be found [here]()
+More on these simulations can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/simulations/SingleComponentsSimulations.md)
 2. Simulations where different kind of components were combined
 together in complex structures to evaluate different
 parameters selection.
-More on these simulations can be found [here]()
+More on these simulations can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/simulations/MultipleComponentsSimulation.md)
 3. Simulation where three datacenter were combined to 
 represent Saas, Paas, Iaas and Faas and corresponding
 workloads were assigned to them.
-More on these simulation can be found [here]()
+More on this simulation can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/simulations/MixSimulation.md)
 
 ## Testing
 

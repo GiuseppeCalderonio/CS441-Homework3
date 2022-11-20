@@ -6,7 +6,8 @@ of various datacenters will be described.
 
 ## Conf 1
 
-The first configuration has the following network topology :
+The [first configuration](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/src/main/resources/configs/config1.conf)
+has the following network topology :
 
 ![Conf1](/documentation/images/Conf1.png?raw=true "Conf1 Network")
 
@@ -45,9 +46,16 @@ then we can analyze that the cost is slightly lower than a pure Iaas because the
 distributed among large and simple cloudlets, so the simple ones reduce the complexity and thus
 the cost.
 
+More info about the types of datacenters can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/datacenter.md)
+
+More info about the types of cloudlets can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/cloudlet.md)
+
+More info about the type of VMs can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/vm.md)
+
 ## Conf 2
 
-The second configuration has the following network topology :
+The [second configuration](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/src/main/resources/configs/config2.conf)
+has the following network topology :
 
 ![Conf2](/documentation/images/Conf2.png?raw=true "Conf2 Network")
 
@@ -109,9 +117,16 @@ a cost reduction (around 50 $ compared to 265).
 To further prove this analysis, we can see that the load is not evenly distributed among datacenters, because
 only the datacenter with id 10 and 12 are activated, being 2 out of 6.
 
+More info about the types of datacenters can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/datacenter.md)
+
+More info about the types of cloudlets can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/cloudlet.md)
+
+More info about the type of VMs can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/vm.md)
+
 ## Conf 3
 
-The third configuration has the following network topology :
+The [third configuration](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/src/main/resources/configs/config3.conf)
+has the following network topology :
 
 ![Conf3](/documentation/images/Conf3.png?raw=true "Conf3 Network")
 
@@ -269,9 +284,16 @@ remaining CPU, Bandwidth and RAM a big set of light and simple coludlets can be 
 The numbers support the theory, since only one out of the tw large datacenters are activated in the
 simulation (DC id column shows only 2 and 4).
 
+More info about the types of datacenters can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/datacenter.md)
+
+More info about the types of cloudlets can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/cloudlet.md)
+
+More info about the type of VMs can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/vm.md)
+
 ## Conf 4
 
-The fourth configuration has the following network topology :
+The [fourth configuration](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/src/main/resources/configs/config4.conf)
+has the following network topology :
 
 ![Conf4](/documentation/images/Conf4.png?raw=true "Conf4 Network")
 
@@ -416,3 +438,10 @@ the results become :
 ```
 
 Which is incredibly higher.
+
+More info about the types of datacenters can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/datacenter.md)
+
+More info about the types of cloudlets can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/cloudlet.md)
+
+More info about the type of VMs can be found [here](https://github.com/GiuseppeCalderonio/CS441-Homework3/blob/master/documentation/components/vm.md)
+
