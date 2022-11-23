@@ -4,6 +4,7 @@
 * Last name : Calderonio
 * UIC email : gcalde22@uic.edu
 * UIN: 679346611
+* dockerhub: [https://hub.docker.com/repository/docker/giuseppecalderonio/hw3](https://hub.docker.com/repository/docker/giuseppecalderonio/hw3)
 
 ## Introduction
 This repository contains a set of different cloud simulations 
