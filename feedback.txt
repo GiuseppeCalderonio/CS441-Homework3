@@ -27,10 +27,11 @@ Grading Criteria:
  - the documentation exists but it is insufficient to understand your program design and models and how you assembled and deployed all components of your solution: up to 15% lost;
 	* documentation present: -0%
 
-Total Grade: 16%
+Total Grade: 21% (+1% bonus)
 Comments:
 
 Good categorization of simulations
+Thorough understanding of cloud computing models
 Good job with network topology and scaling
 
 Keep it up!
